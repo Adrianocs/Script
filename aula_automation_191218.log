@@ -1,0 +1,239 @@
+Script iniciado em Qua 19 Dez 2018 18:43:12 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ vagrant ssh automation
+Last login: Tue Dec 18 20:51:06 2018 from 10.0.2.2
+]0;vagrant@automation:~[?1034h[vagrant@automation ~]$ sudo su -
+Last login: Tue Dec 18 20:51:13 UTC 2018 on pts/0
+             _                        _   _             
+  __ _ _   _| |_ ___  _ __ ___   __ _| |_(_) ___  _ __  
+ / _` | | | | __/ _ \| '_ ` _ \ / _` | __| |/ _ \| '_ \ 
+| (_| | |_| | || (_) | | | | | | (_| | |_| | (_) | | | |
+ \__,_|\__,_|\__\___/|_| |_| |_|\__,_|\__|_|\___/|_| |_|
+                                                        
+[?1034h]0;root@automation: ~root@automation:~# echo "ansible-playbook pla[K[K[K<>a>r>q>u>i>v>o> >[1P>.>y>m>l>[C --limit @<>a>r>q>u>i>v>o>.>r>e>t>r>y>[C #vai executar apenas aqueles hosts que apresentr[Karam erro"
+ansible-playbook <arquivo.yml> --limit @<arquivo.retry> #vai executar apenas aqueles hosts que apresentaram erro
+]0;root@automation: ~root@automation:~# echo "ansible-playbook <arquivo.yml> --limit @<arquivo.retry> #vai executar apenas aqueles hosts que apresentaram erro"[1@/[1@i[1@p
+ansible-playbook <arquivo.yml> --limit @<arquivo.retry> #vai executar apenas aqueles hosts/ip que apresentaram erro
+]0;root@automation: ~root@automation:~# echo[K[K[K[Kcd /etc/r
+rc0.d/         rc2.d/         rc4.d/         rc6.d/         request-key.d/ rsyslog.d/     rwtab.d/       
+rc1.d/         rc3.d/         rc5.d/         rc.d/          rpm/           rundeck/       
+]0;root@automation: ~root@automation:~# cd /etc/r
+rc0.d/         rc2.d/         rc4.d/         rc6.d/         request-key.d/ rsyslog.d/     rwtab.d/       
+rc1.d/         rc3.d/         rc5.d/         rc.d/          rpm/           rundeck/       
+]0;root@automation: ~root@automation:~# cd /etc/rundeck/ssl/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd e[K/etc/audi[K[K[K[Krundeck/
+]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# vi
+vi         view       vigr       vim        vimdiff    vimtutor   vipw       virt-what  visudo     
+]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# vi
+vi         view       vigr       vim        vimdiff    vimtutor   vipw       virt-what  visudo     
+]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# vim framework.properties 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;44r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[44;1H"framework.properties" 41L, 1438C[>c[1;1H[34m# framework.properties -
+#
+
+# ----------------------------------------------------------------
+# Rundeck server connection information
+# ----------------------------------------------------------------[m
+
+[36mframework.server.name[m = [31mlocalhost[m
+[36mframework.server.hostname[m = [31mlocalhost[m
+[36mframework.server.port[m = [31m4440[m
+[36mframework.server.url[m = [31mhttp://localhost:4440[m
+
+[34m# ----------------------------------------------------------------
+# Installation locations
+# ----------------------------------------------------------------[m
+
+[36mrdeck.base[m=[31m/var/lib/rundeck[m
+
+[36mframework.projects.dir[m=[31m/var/rundeck/projects[m
+[36mframework.etc.dir[m=[31m/etc/rundeck[m
+[36mframework.var.dir[m=[31m/var/lib/rundeck/var[m
+[36mframework.tmp.dir[m=[31m/var/lib/rundeck/var/tmp[m
+[36mframework.logs.dir[m=[31m/var/lib/rundeck/logs[m
+[36mframework.libext.dir[m=[31m/var/lib/rundeck/libext[m
+
+[34m# ----------------------------------------------------------------
+# SSH defaults for node executor and file copier
+# ----------------------------------------------------------------[m
+
+[36mframework.ssh.keypath[m = [31m/var/lib/rundeck/.ssh/id_rsa[m
+[36mframework.ssh.user[m = [31mrundeck[m
+
+[34m# ssh connection timeout after a specified number of milliseconds.
+# "0" value means wait forever.[m
+[36mframework.ssh.timeout[m = [31m0[m
+
+
+[34m# ----------------------------------------------------------------
+# Auto generated server UUID: 4e16a6fc-b275-4836-8c8a-38e661e68da5
+# ----------------------------------------------------------------[m
+[36mrundeck.server.uuid[m = [31m4e16a6fc-b275-4836-8c8a-38e661e68da5[m
+[1m[34m~                                                                                                                                                                         [43;1H~                                                                                                                                                                         [m[44;153H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;1H[K[44;1H:[?12l[?25h%[?25l[?12l[?25hs[?25l[?12l[?25h/[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h:[?25l[?12l[?25h/[?25l[?12l[?25h[?25l[44;15H[K[44;15H[?12l[?25h[?25l[44;14H[K[44;14H[?12l[?25h/[?25l[?12l[?25h1[?25l[?12l[?25h9[?25l[?12l[?25h2[?25l[?12l[?25h+[?25l[?12l[?25h[?25l[44;18H[K[44;18H[?12l[?25h.[?25l[?12l[?25h1[?25l[?12l[?25h6[?25l[?12l[?25h8[?25l[?12l[?25h.[?25l[?12l[?25h9[?25l[?12l[?25h9[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[?12l[?25h0[?25l[?12l[?25h/[?25l[?12l[?25hg[?25l[?12l[?25h8%s/localhost/192.168.99.30/g[?25l:8[?12l[?25h[?25l%s/localhost/192.168.99.30/g[44;30H[K[44;2H[?12l[?25h%s/localhost/192.168.99.30/g[?25l[44;29H[K[44;29H[?12l[?25h[?25l[44;28H[K[44;28H[?12l[?25h[?25l[44;27H[K[44;27H[?12l[?25h[?25l[44;26H[K[44;26H[?12l[?25h[?25l[44;25H[K[44;25H[?12l[?25h[?25l[44;24H[K[44;24H[?12l[?25h[?25l[44;23H[K[44;23H[?12l[?25h[?25l[44;22H[K[44;22H[?12l[?25h[?25l[44;21H[K[44;21H[?12l[?25h[?25l[44;20H[K[44;20H[?12l[?25h[?25l[44;19H[K[44;19H[?12l[?25h[?25l[44;18H[K[44;18H[?12l[?25h[?25l[44;17H[K[44;17H[?12l[?25h[?25l[44;16H[K[44;16H[?12l[?25h[?25l[44;15H[K[44;15H[?12l[?25h[?25l[44;14H[K[44;14H[?12l[?25h[?25l[44;13H[K[44;13H[?12l[?25h[?25l[44;12H[K[44;12H[?12l[?25h[?25l[44;11H[K[44;11H[?12l[?25h[?25l[44;10H[K[44;10H[?12l[?25h[?25l[44;9H[K[44;9H[?12l[?25h[?25l[44;8H[K[44;8H[?12l[?25h[?25l[44;7H[K[44;7H[?12l[?25h[?25l[44;6H[K[44;6H[?12l[?25h[?25l[44;5H[K[44;5H[?12l[?25h[?25l[44;4H[K[44;4H[?12l[?25h[?25l[44;3H[K[44;3H[?12l[?25h[?25l[44;2H[K[44;2H[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h[?25l[44;3H[K[44;3H[?12l[?25he[?25l[?12l[?25ht[?25l[?12l[?25h[?25l [?12l[?25hn[?25l[?12l[?25hu[?25l[?12l[?25h[?25l[1;1H[33m  1 [m[34m# framework.properties -[m
+[33m  2 [m[34m#[m
+[33m  3 
+  4 [m[34m# [60C----[m
+[33m  5 [m[34m# Rundeck server connection information[m
+[33m  6 [m[34m# [60C----[m
+[33m  7 
+  8 [m[36mframework.server.name[m = [1C[31mocalhost[m
+[33m  9 [m[36mframework.server.hostname[m = [1C[31mocalhost[m
+[33m 10 [m[36mframework.server.port[m = [31m4440[m
+[33m 11 [m[36mframework.server.url[m = [31mhttp://localhost:4440[m
+[33m 12 
+ 13 [m[34m# [60C----[m
+[33m 14 [m[34m# Installation locations[m
+[33m 15 [m[34m# [60C----[m
+[33m 16 
+ 17 [m[36mrdeck.base[m=[1C[31mvar/lib/rundeck[m
+[33m 18 
+ 19 [m[36mframework.projects.dir[m=[1C[31mvar/rundeck/projects[m
+[33m 20 [m[36mframework.etc.dir[m=[1C[31metc/rundeck[m
+[33m 21 [m[36mframework.var.dir[m=[1C[31mvar/lib/rundeck/var[m
+[33m 22 [m[36mframework.tmp.dir[m=[1C[31mvar/lib/rundeck/var/tmp[m
+[33m 23 [m[36mframework.logs.dir[m=[1C[31mvar/lib/rundeck/logs[m
+[33m 24 [m[36mframework.libext.dir[m=[1C[31mvar/lib/rundeck/libext[m
+[33m 25 
+ 26 [m[34m# [60C----[m
+[33m 27 [m[34m# SSH defaults for node executor and file copier[m
+[33m 28 [m[34m# [60C----[m
+[33m 29 
+ 30 [m[36mframework.ssh.keypath[m = [1C[31mvar/lib/rundeck/.ssh/id_rsa[m
+[33m 31 [m[36mframework.ssh.user[m = [31mrundeck[m
+[33m 32 
+ 33 [m[34m# ssh connection timeout after a specified number of milliseconds.[m
+[33m 34 [m[34m# "0" value means wait forever.[m
+[33m 35 [m[36mframework.ssh.timeout[m = [31m0[m
+[33m 36 
+ 37 
+ 38 [m[34m# [60C----[m
+[33m 39 [m[34m# Auto generated server UUID: 4e16a6fc-b275-4836-8c8a-38e661e68da5[m
+[33m 40 [m[34m# [60C----[m
+[33m 41 [m[36mrundeck.server.uuid[m = [31m4e16a6fc-b275-4836-8c8a-38e661e68da5[m[44;153H1,1[11CAll[1;5H[?12l[?25h[?25l[44;1H[K[44;1H:[?12l[?25h8[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h,[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[?12l[?25h9[?25l[?12l[?25h2[?25l[?12l[?25h.[?25l[?12l[?25h1[?25l[?12l[?25h6[?25l[?12l[?25h8[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[?12l[?25h0[?25l[?12l[?25h=[?25l[?12l[?25h=[?25l[?12l[?25h[?25l[44;28H[K[44;28H[?12l[?25h[?25l[44;27H[K[44;27H[?12l[?25h[?25l[44;26H[K[44;26H[?12l[?25h[?25l[44;25H[K[44;25H[?12l[?25h*[?25l[?12l[?25h*[?25l[?12l[?25h.[?25l[?12l[?25h[?25l[44;27H[K[44;27H[?12l[?25h[?25l[44;26H[K[44;26H[?12l[?25h[?25l[44;25H[K[44;25H[?12l[?25h[?25l[44;24H[K[44;24H[?12l[?25h.[?25l[?12l[?25h9[?25l[?12l[?25h9[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[?12l[?25h0[?25l[?12l[?25h/[?25l[?12l[?25hg[?25l[?12l[?25h[?25l[1m[37m[41mE492: Not an editor command: 8,11,localhost,192.168.99.30/g[m[93C1,1[11CAll[1;5H[?12l[?25h[?25l[44;1H[K[44;1H:[?12l[?25h8[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25hs[?25l[?12l[?25h,[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25ha[?25l[?12l[?25hl[?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25h/[?25l[?12l[?25h1[?25l[?12l[?25h9[?25l[?12l[?25h2[?25l[?12l[?25h,[?25l[?12l[?25h[?25l[44;21H[K[44;21H[?12l[?25h.[?25l[?12l[?25h1[?25l[?12l[?25h6[?25l[?12l[?25h8[?25l[?12l[?25h.[?25l[?12l[?25h9[?25l[?12l[?25h9[?25l[?12l[?25h.[?25l[?12l[?25h3[?25l[?12l[?25h0[?25l[?12l[?25h/[?25l[?12l[?25hg[?25l[?12l[?25h[?25l[1m[37m[41mE486: Pattern not found: localhost/192.168.99.30/g[m[102C1,1[11CAll[1;5H[?12l[?25h[?25l[44;155H2[1;6H[?12l[?25h[?25l[44;155H3[1;7H[?12l[?25h[?25l[44;155H4[1;8H[?12l[?25h[?25l[44;155H5[1;9H[?12l[?25h[?25l[44;155H6[1;10H[?12l[?25h[?25l[44;155H7[1;11H[?12l[?25h[?25l[44;155H8[1;12H[?12l[?25h[?25l[44;155H9[1;13H[?12l[?25h[?25l[44;155H10[1;14H[?12l[?25h[?25l[44;156H1[1;15H[?12l[?25h[?25l[44;156H2[1;16H[?12l[?25h[?25l[44;156H3[1;17H[?12l[?25h[?25l[44;156H4[1;18H[?12l[?25h[?25l[44;156H5[1;19H[?12l[?25h[?25l[44;156H6[1;20H[?12l[?25h[?25l[44;153H2,1 [2;5H[?12l[?25h[?25l[44;153H3,0-1[3;5H[?12l[?25h[?25l[44;153H4,16 [4;20H[?12l[?25h[?25l[44;153H5[5;20H[?12l[?25h[?25l[44;153H6[6;20H[?12l[?25h[?25l[44;153H7,0-1[7;5H[?12l[?25h[?25l[44;153H8,16 [8;20H[?12l[?25h[?25l[44;156H7[8;21H[?12l[?25h[?25l[44;156H8[8;22H[?12l[?25h[?25l[44;156H9[8;23H[?12l[?25h[?25l[44;155H20[8;24H[?12l[?25h[?25l[44;156H1[8;25H[?12l[?25h[?25l[44;156H2[8;26H[?12l[?25h[?25l[44;156H3[8;27H[?12l[?25h[?25l[44;156H4[8;28H[?12l[?25h[?25l[44;156H5[8;29H[?12l[?25h[?25l[44;156H6[8;30H[?12l[?25h[?25l[44;156H7[8;31H[?12l[?25h[?25l[44;156H8[8;32H[?12l[?25h[?25l[44;156H9[8;33H[?12l[?25h[?25l[44;156H8[8;32H[?12l[?25h[?25l[44;156H7[8;31H[?12l[?25h[?25l[44;156H6[8;30H[?12l[?25h[?25l[44;156H5[8;29H[?12l[?25h[?25l[44;1H[1m--[m[1m[37m[41m8[m[1m INSERT[m[1m[37m[41mt[m[1m --[m[1m[37m[41mn[m[44;13H[K[44;153H8,25[10CAll[8;29H[K[8;29H[?12l[?25h[?25l[31m1[m[44;156H6[8;30H[?12l[?25h[?25l[31m9[m[44;156H7[8;31H[?12l[?25h[?25l[31m2[m[44;156H8[8;32H[?12l[?25h[?25l[31m.[m[44;156H9[8;33H[?12l[?25h[?25l[31m1[m[44;155H30[8;34H[?12l[?25h[?25l[31m6[m[44;156H1[8;35H[?12l[?25h[?25l[31m8[m[44;156H2[8;36H[?12l[?25h[?25l[31m.[m[44;156H3[8;37H[?12l[?25h[?25l[31m9[m[44;156H4[8;38H[?12l[?25h[?25l[31m9[m[44;156H5[8;39H[?12l[?25h[?25l[31m.[m[44;156H6[8;40H[?12l[?25h[?25l[31m3[m[44;156H7[8;41H[?12l[?25h[?25l[31m0[m[44;156H8[8;42H[?12l[?25h[44;1H[K[8;41H[?25l[44;153H8,37[10CAll[8;41H[?12l[?25h[?25l[44;153H9[9;41H[?12l[?25h[?25l[44;156H6[9;40H[?12l[?25h[?25l[44;156H5[9;39H[?12l[?25h[?25l[44;156H4[9;38H[?12l[?25h[?25l[44;156H3[9;37H[?12l[?25h[?25l[44;156H2[9;36H[?12l[?25h[?25l[44;156H1[9;35H[?12l[?25h[?25l[44;156H0[9;34H[?12l[?25h[?25l[44;155H29[9;33H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;153H[K[44;153H9,29[10CAll[44;1H[K[9;33H[31m192.168.99.30[m[44;153H9,41[10CAll[9;45H[?12l[?25h[?25l[44;153H10,28[10;32H[?12l[?25h[?25l[44;157H7[10;31H[?12l[?25h[?25l[44;154H1[11;31H[?12l[?25h[?25l[44;154H2,0-1[12;5H[?12l[?25h[?25l[44;154H1,27 [11;31H[?12l[?25h[?25l[44;157H8[11;32H[?12l[?25h[?25l[44;157H9[11;33H[?12l[?25h[?25l[44;156H30[11;34H[?12l[?25h[?25l[44;157H1[11;35H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;153H[K[44;153H11,31[9CAll[44;1H[K[11;35H[31m192.168.99.30:4440[m[44;153H11,43[9CAll[11;47H[?12l[?25h[?25l[44;153H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"framework.properties" 41L, 1450C written
+[?1l>[?12l[?25h[?1049l]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# cd /etc/[K[K[K[K[K[K[K[Kvi ri[Kundeck-config.properties 
+[?1049h[?1h=[1;44r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[44;1H"rundeck-config.properties" 11L, 455C[1;1H#loglevel.default is the default log level for jobs: ERROR,WARN,INFO,VERBOSE,DEBUG
+loglevel.default=INFO
+rdeck.base=/var/lib/rundeck
+
+#rss.enabled if set to true enables RSS feeds that are public (non-authenticated)
+rss.enabled=false
+# change hostname here
+grails.serverURL=http://localhost:4440
+dataSource.dbCreate = update
+dataSource.url = jdbc:h2:file:/var/lib/rundeck/data/rundeckdb;MVCC=true
+rundeck.log4j.config.file = /etc/rundeck/log4j.properties
+[1m[34m~                                                                                                                                                                         [13;1H~                                                                                                                                                                         [14;1H~                                                                                                                                                                         [15;1H~                                                                                                                                                                         [16;1H~                                                                                                                                                                         [17;1H~                                                                                                                                                                         [18;1H~                                                                                                                                                                         [19;1H~                                                                                                                                                                         [20;1H~                                                                                                                                                                         [21;1H~                                                                                                                                                                         [22;1H~                                                                                                                                                                         [23;1H~                                                                                                                                                                         [24;1H~                                                                                                                                                                         [25;1H~                                                                                                                                                                         [26;1H~                                                                                                                                                                         [27;1H~                                                                                                                                                                         [28;1H~                                                                                                                                                                         [29;1H~                                                                                                                                                                         [30;1H~                                                                                                                                                                         [31;1H~                                                                                                                                                                         [32;1H~                                                                                                                                                                         [33;1H~                                                                                                                                                                         [34;1H~                                                                                                                                                                         [35;1H~                                                                                                                                                                         [36;1H~                                                                                                                                                                         [37;1H~                                                                                                                                                                         [38;1H~                                                                                                                                                                         [39;1H~                                                                                                                                                                         [40;1H~                                                                                                                                                                         [41;1H~                                                                                                                                                                         [42;1H~                                                                                                                                                                         [43;1H~                                                                                                                                                                         [1;1H[?12l[?25h[?25l[m[44;1H[K[44;1H:[?12l[?25hset nu[?25l[1;1H[33m      1 [m#loglevel.default is the default log level for jobs: ERROR,WARN,INFO,VERBOSE,DEBUG
+[33m      2 [mloglevel.default=INFO
+[33m      3 [mrdeck.base=/var/lib/rundeck
+[33m      4 
+      5 [m#rss.enabled if set to true enables RSS feeds that are public (non-authenticated)
+[33m      6 [mrss.enabled=false
+[33m      7 [m# change hostname here
+[33m      8 [mgrails.serverURL=http://localhost:4440
+[33m      9 [mdataSource.dbCreate = update
+[33m     10 [mdataSource.url = jdbc:h2:file:/var/lib/rundeck/data/rundeckdb;MVCC=true
+[33m     11 [mrundeck.log4j.config.file = /etc/rundeck/log4j.properties[1;9H[?12l[?25h[?25l[44;1H[K[44;1H:[?12l[?25h8,[?25l[44;3H[K[44;3H[?12l[?25hs,localhooo[?25l[44;13H[K[44;13H[?12l[?25h[?25l[44;12H[K[44;12H[?12l[?25hst,192.168.99.30,g[?25l[8;33H192.168.99.30:4440[8;9H[?12l[?25h[?25l[44;1H[K[44;1H:[?12l[?25hwq![?25l"rundeck-config.properties" 11L, 459C written
+[?1l>[?12l[?25h[?1049l]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# systemctl start runlevel
+runlevel0.target  runlevel1.target  runlevel5.target  runlevel6.target  
+]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# systemctl start runleveld[K[K[K[K[K[Kdeeckd[K[K[K[Kckd
+]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# watch -n0 ss -lntp
+[?1049h[1;44r(B[m[4l[?7h[H[2JEvery 0.1s: ss -lntp[1;147HWed Dec 19 23:45:48 2018[3;1HState	   Recv-Q Send-Q Local Address:Port[3;59HPeer Address:Port[4dLISTEN     0	  128[4;32H*:111[4;59H*:*[4;81Husers:(("rpcbind",pid=1510,fd=4),("systemd",pid=1,fd=65))[5dLISTEN     0	  128[5;32H*:22[5;59H*:*[5;81Husers:(("sshd",pid=2474,fd=3))[6dLISTEN     0	  100    127.0.0.1:25[6;61H*:*[6;83Husers:(("master",pid=2812,fd=13))[7dLISTEN     0	  128[7;31H:::111[7;58H:::*[7;81Husers:(("rpcbind",pid=1510,fd=6),("systemd",pid=1,fd=67))[8dLISTEN     0	  128[8;31H:::22[8;58H:::*[8;81Husers:(("sshd",pid=2474,fd=4))[9dLISTEN     0	  50[9;31H:::4440[9;58H:::*[9;81Husers:(("java",pid=21469,fd=91))[10dLISTEN     0	  100[10;30H::1:25[10;58H:::*[10;81Husers:(("master",pid=2812,fd=14))[44;170H[1;165H9[44d	 [1;164H50[44d	 [1;165H1[44d	 [1;165H2[44d	 [1;165H3[44d	 [1;165H4[44d	 [1;165H5[44d	 [1;165H6[44d	 [1;165H7[44d	 [1;165H8[44d	 [1;165H9[44d	 [1;162H6:00[44d	 [1;165H1[44d	 [1;165H2[44d	 [1;165H3[44d	 [1;165H4[44d	 [1;165H5[44d	 [1;165H6[44d	 [1;165H7[44d	 [1;165H8[44d	 [1;165H9[44d	 [1;164H10[44d	 [1;165H1[44d	 [1;165H2[44d	 [1;165H3[44d	 [1;165H4[44d	 [1;165H5[44d	 [1;165H6[44d	 [1;165H7[44d	 [1;165H8[44d	 [1;165H9[44d	 [1;164H20[44d	 [1;165H1[44d	 [1;165H2[44d	 [1;165H3[44d	 [1;165H4[44d	 [44;1H[?1049l[?1l>]0;root@automation: /etc/rundeckroot@automation:/etc/rundeck# cd /[K[K
+]0;root@automation: ~root@automation:~# cd [K[K[Kmkdir aulas_Auto
+]0;root@automation: ~root@automation:~# cd aulas_Auto/
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /etc/[K[K[K[Kva
+vagrant/ var/     
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /va
+vagrant/ var/     
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/
+adm/      db/       games/    kerberos/ local/    log/      nis/      preserve/ rundeck/  tmp/      www/      
+cache/    empty/    gopher/   lib/      lock/     mail/     opt/      run/      spool/    .updated  yp/       
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/run
+run/     rundeck/ 
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/run
+run/     rundeck/ 
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/rundeck/projects/Luthor/
+acls/ etc/  
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/rundeck/projects/Luthor/
+acls/ etc/  
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/rundeck/projects/Luthor/
+acls/ etc/  
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/rundeck/projects/Luthor/etc/
+project.properties  resources.xml       
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# ls /var/rundeck/projects/Luthor/etc/*
+/var/rundeck/projects/Luthor/etc/project.properties  /var/rundeck/projects/Luthor/etc/resources.xml
+]0;root@automation: ~/aulas_Autoroot@automation:~/aulas_Auto# cd
+]0;root@automation: ~root@automation:~# su - rn[Kundeck
+Last login: Wed Dec 19 23:24:33 UTC 2018
+[?1034h-bash-4.2$ pwd
+/var/lib/rundeck
+-bash-4.2$ cd .ssh/
+-bash-4.2$ ls
+id_rsa  id_rsa.pub
+-bash-4.2$ cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+XARdEFx57MWm98MWmG4NUtlrMME8NuedlKo/1Qv9/NFnLqS27KZ42Q3jDNzt5ClurrdRpKkbpQQTJ/HgQz/i3XiBW4pIvjTdNnwCA6gUcyJbzwOtb8On1ORfCNCskFLl11mk+AVqtqp1jW4tmzGmIPKijj9z3QhacaHAiggg3SbpDqEABwd/2uVYg2vFwEGG/2SMVab++SDxjIM0JSECSSWFTv05vwSIIvNmBdMaQCjg+j9/MPRwymDXz/JeJarwpPDTn1nxw+ME9vraqlltMR+Se+URJxaFGF7be6iOdRzrGzvvGRwdX/QibDtzDO1C3AqySQBGpg9CyBSjjI0B 
+-bash-4.2$ ssh docker pwd
+The authenticity of host 'docker (192.168.99.20)' can't be established.
+ECDSA key fingerprint is SHA256:sl8GDhuU2slxwOSf2rjAIM4SBqxkOfN7rDe6NQADlsI.
+ECDSA key fingerprint is MD5:65:7b:d7:db:d2:5a:4a:3e:27:98:e2:6e:59:bb:40:85.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'docker,192.168.99.20' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+-bash-4.2$ exit
+logout
+]0;root@automation: ~root@automation:~# cd .ssh/
+]0;root@automation: ~/.sshroot@automation:~/.ssh# echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+XARdEFx57MWm98MWmG4NUtlrMME8NuedlKo/1Qv9/NFnLqS27KZ42Q3jDNzt5ClurrdRpKkbpQQTJ/HgQz/i3XiBW4pIvjTdNnwC A6gUcyJbzwOtb8On1ORfCNCskFLl11mk+AVqtqp1jW4tmzGmIPKijj9z3QhacaHAiggg3SbpDqEABwd/2uVYg2vFwEGG/2SMVab++SDxjIM0JSECSSWFTv05vwSIIvNmBdMaQCjg+j9/MPRwymDXz/JeJarwpPDTn1nxw+ME9v raqlltMR+Se+URJxaFGF7be6iOdRzrGzvvGRwdX/QibDtzDO1C3AqySQBGpg9CyBSjjI0B" >> authorized_keys 
+]0;root@automation: ~/.sshroot@automation:~/.ssh# su - ri[Kundeck
+Last login: Thu Dec 20 00:09:21 UTC 2018 on pts/0
+[?1034h-bash-4.2$ exitssh docker pwd
+Permission denied (publickey).
+-bash-4.2$ ssh docker pwd[1@r[1@p[1P[1@o[1@o[1@t[1@@
+/root
+-bash-4.2$ ssh root@docker pwd[1P pwd[1P pwd[1P pwd[1P pwd[1P pwde pwdv pwdo pwdp pwds pwd
+The authenticity of host 'devops (192.168.99.10)' can't be established.
+ECDSA key fingerprint is SHA256:S34z4bNPgKAOL+vdFzJ1errsr2NygAp3b/45I+FhvLQ.
+ECDSA key fingerprint is MD5:7c:d5:70:98:47:81:3d:f1:1a:c6:9e:b5:d8:71:6b:14.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'devops,192.168.99.10' (ECDSA) to the list of known hosts.
+     _                           
+  __| | _____   _____  _ __  ___ 
+ / _` |/ _ \ \ / / _ \| '_ \/ __|
+| (_| |  __/\ V / (_) | |_) \__ \
+ \__,_|\___| \_/ \___/| .__/|___/
+                      |_|        
+/root
+-bash-4.2$ ssh root@{}a}u}t}o}m}a}t}i}o}n},}d}e}v}o}p}s},}d}o}c}k}e}r}
+The authenticity of host 'automation (127.0.0.1)' can't be established.
+ECDSA key fingerprint is SHA256:XanWhWZjjSQVQRWAOpx44llE3/IzlZh4SZWTNtvAWk0.
+ECDSA key fingerprint is MD5:9a:df:fc:f9:58:71:d7:13:34:09:36:88:85:88:35:54.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'automation' (ECDSA) to the list of known hosts.
+             _                        _   _             
+  __ _ _   _| |_ ___  _ __ ___   __ _| |_(_) ___  _ __  
+ / _` | | | | __/ _ \| '_ ` _ \ / _` | __| |/ _ \| '_ \ 
+| (_| | |_| | || (_) | | | | | | (_| | |_| | (_) | | | |
+ \__,_|\__,_|\__\___/|_| |_| |_|\__,_|\__|_|\___/|_| |_|
+                                                        
+bash: root@devops: command not found
+-bash-4.2$ ssh root@{automation,devops,docker}[C[C[C[C[C[C[C[C[C[C[C[Kssh root@{automation,devops,docker} pwd
+             _                        _   _             
+  __ _ _   _| |_ ___  _ __ ___   __ _| |_(_) ___  _ __  
+ / _` | | | | __/ _ \| '_ ` _ \ / _` | __| |/ _ \| '_ \ 
+| (_| | |_| | || (_) | | | | | | (_| | |_| | (_) | | | |
+ \__,_|\__,_|\__\___/|_| |_| |_|\__,_|\__|_|\___/|_| |_|
+                                                        
+bash: root@devops: command not found
+-bash-4.2$ - [K[Klogout
+]0;root@automation: ~/.sshroot@automation:~/.ssh# logout
+ _________________________________________
+/ Documentation is the castor oil of      \
+| programming. Managers know it must be   |
+| good because the programmers hate it so |
+\ much.                                   /
+ -----------------------------------------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+]0;vagrant@automation:~[vagrant@automation ~]$ logout
+Connection to 127.0.0.1 closed.
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Qua 19 Dez 2018 22:24:28 -02

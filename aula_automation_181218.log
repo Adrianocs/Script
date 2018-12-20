@@ -1,0 +1,32 @@
+Script iniciado em Ter 18 Dez 2018 18:50:48 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ vagrant ssh automataio[K[K[Kiob[Kn
+Last login: Mon Dec 17 22:26:32 2018 from 10.0.2.2
+]0;vagrant@automation:~[?1034h[vagrant@automation ~]$ sudo su -
+Last login: Mon Dec 17 22:31:32 UTC 2018 on pts/0
+             _                        _   _             
+  __ _ _   _| |_ ___  _ __ ___   __ _| |_(_) ___  _ __  
+ / _` | | | | __/ _ \| '_ ` _ \ / _` | __| |/ _ \| '_ \ 
+| (_| | |_| | || (_) | | | | | | (_| | |_| | (_) | | | |
+ \__,_|\__,_|\__\___/|_| |_| |_|\__,_|\__|_|\___/|_| |_|
+                                                        
+[?1034h]0;root@automation: ~root@automation:~# [K]0;root@automation: ~root@automation:~# [K]0;root@automation: ~root@automation:~# [K]0;root@automation: ~root@automation:~# [K]0;root@automation: ~root@automation:~# [K]0;root@automation: ~root@automation:~# cm
+cmp      cmsutil  
+]0;root@automation: ~root@automation:~# cm
+cmp      cmsutil  
+]0;root@automation: ~root@automation:~# cm[K[Klogout
+ _________________________________________
+/ I've never been canoeing before, but I  \
+| imagine there must be just a few simple |
+| heuristics you have to remember... Yes, |
+\ don't fall out, and don't hit rocks.    /
+ -----------------------------------------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+]0;vagrant@automation:~[vagrant@automation ~]$ logout
+Connection to 127.0.0.1 closed.
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Ter 18 Dez 2018 22:32:49 -02

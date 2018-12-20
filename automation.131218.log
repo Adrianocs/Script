@@ -1,0 +1,22 @@
+Script iniciado em Qui 13 Dez 2018 21:42:06 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ vagrant sshd[K automation
+Last login: Thu Dec 13 21:29:02 2018 from 10.0.2.2
+]0;vagrant@automation:~[?1034h[vagrant@automation ~]$ sudo su -
+Last login: Thu Dec 13 21:35:12 UTC 2018 on pts/0
+]0;root@automation:~[?1034h[root@automation ~]# echo "gerando a chave de [K[K[K[K[K[K[Kve [K[K[Kave para troca de chaves"
+gerando a chave para troca de chaves
+]0;root@automation:~[root@automation ~]# puppet agent -t --sere[Ke[Kver devops.salas4linux.com.br
+[0;32mInfo: Creating a new SSL key for automation.salas4linux.com.br[0m
+[0;32mInfo: Downloaded certificate for ca from devops.salas4linux.com.br[0m
+[0;32mInfo: csr_attributes file loading from /etc/puppetlabs/puppet/csr_attributes.yaml[0m
+[0;32mInfo: Creating a new SSL certificate request for automation.salas4linux.com.br[0m
+[0;32mInfo: Certificate Request fingerprint (SHA256): BE:01:FC:AA:4F:38:79:3B:51:3C:EF:41:05:97:CE:D1:C6:BC:1C:A7:0F:2C:BD:15:7A:7E:84:C3:9D:FE:C6:DB[0m
+Exiting; no certificate found and waitforcert is disabled
+]0;root@automation:~[root@automation ~]# ls
+anaconda-ks.cfg  original-ks.cfg
+]0;root@automation:~[root@automation ~]# logout
+]0;vagrant@automation:~[vagrant@automation ~]$ logout
+Connection to 127.0.0.1 closed.
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Qui 13 Dez 2018 22:04:14 -02

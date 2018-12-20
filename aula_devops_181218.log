@@ -1,0 +1,820 @@
+Script iniciado em Ter 18 Dez 2018 18:50:18 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ vagrant ssh devops
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-140-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+24 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Dec 17 20:38:44 2018 from 10.0.2.2
+]0;vagrant@devops: ~vagrant@devops:~$ sudfo =[K[K[K[Ko su -
+     _                           
+  __| | _____   _____  _ __  ___ 
+ / _` |/ _ \ \ / / _ \| '_ \/ __|
+| (_| |  __/\ V / (_) | |_) \__ \
+ \__,_|\___| \_/ \___/| .__/|___/
+                      |_|        
+]0;root@devops: ~root@devops:~# cmp [K[K[K[Kecho "GIT"
+GIT
+]0;root@devops: ~root@devops:~# mkdir kenobi
+]0;root@devops: ~root@devops:~# cd kenobi/
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# gi
+ginstall-info       git-receive-pack    git-upload-archive  
+git                 git-shell           git-upload-pack     
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# gi
+ginstall-info       git-receive-pack    git-upload-archive  
+git                 git-shell           git-upload-pack     
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git init
+Initialized empty Git repository in /root/kenobi/.git/
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cd .git/
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# ls
+[0m[01;34mbranches[0m  config  description  HEAD  [01;34mhooks[0m  [01;34minfo[0m  [01;34mobjects[0m  [01;34mrefs[0m
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# ls -l
+total 32
+drwxr-xr-x 2 root root 4096 Dec 18 23:23 [0m[01;34mbranches[0m
+-rw-r--r-- 1 root root   92 Dec 18 23:23 config
+-rw-r--r-- 1 root root   73 Dec 18 23:23 description
+-rw-r--r-- 1 root root   23 Dec 18 23:23 HEAD
+drwxr-xr-x 2 root root 4096 Dec 18 23:23 [01;34mhooks[0m
+drwxr-xr-x 2 root root 4096 Dec 18 23:23 [01;34minfo[0m
+drwxr-xr-x 4 root root 4096 Dec 18 23:23 [01;34mobjects[0m
+drwxr-xr-x 4 root root 4096 Dec 18 23:23 [01;34mrefs[0m
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# cat config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# cat description 
+Unnamed repository; edit this file 'description' to name the repository.
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# ct [K[Kat HEAD 
+ref: refs/heads/master
+]0;root@devops: ~/kenobi/.gitroot@devops:~/kenobi/.git# cd ..
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# pwd
+/root/kenobi
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config us[Ker[K[Kser.name = [K[K"Adriano CS'[K"
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config user.email ""a"d"r"i"a"n"o","[1P"."c"s"o"a"r"e"s"@"g"m"a"i"l"."c"o"m"
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat .git/config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	name = Adriano CS
+	email = adriano.csoares@gmail.com
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# echo "esta foi a forma local"
+esta foi a forma local
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# echo "forma global"
+forma global
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# continue [K[K[K[K[K[K[K[K[Kgi
+ginstall-info       git-receive-pack    git-upload-archive  
+git                 git-shell           git-upload-pack     
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config -global userna[K[K.name = "Adriano CS"
+error: did you mean `--global` (with two dashes ?)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config -global user.name = "Adriano CS"[1@-
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat ~.[K/.gitconfig 
+[user]
+	name = =
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat ~/.gitconfig git config --global user.name = "Adriano CS"[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pecho "forma global"esta foi a forma local"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pcat .git/config git config user.email "adriano.csoares@gmail.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat .git/config [Kecho "esta foi a forma local"[10Pforma global"git config -global user.name = "Adriano CS"[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name = "Adriano CS"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pcat ~/.gitconfig 
+[user]
+	name = =
+	name = =
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim RED[KADME.md
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"README.md" [New File][>c[2;1H[1m[34m~                                                                                   [3;1H~                                                                                   [4;1H~                                                                                   [5;1H~                                                                                   [6;1H~                                                                                   [7;1H~                                                                                   [8;1H~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H0,1[11CAll[1;1H[?12l[?25h[?25l*[44;67H1,2[1;2H[?12l[?25h[?25l[3m*R[23m[44;69H3[1;3H[?12l[?25h[?25l[3mE[23m[44;69H4[1;4H[?12l[?25h[?25l[3mP[23m[44;69H5[1;5H[?12l[?25h[?25l[3mO[23m[44;69H6[1;6H[?12l[?25h[?25l[3mS[23m[44;69H7[1;7H[?12l[?25h[?25l[3mI[23m[44;69H8[1;8H[?12l[?25h[?25l[3mT[23m[44;69H9[1;9H[?12l[?25h[?25l[3mI[23m[44;69H10[1;10H[?12l[?25h[?25l[3mR[23m[44;70H1[1;11H[?12l[?25h[?25l[1;10H[K[44;70H0[1;10H[?12l[?25h[?25l[1;9H[K[44;69H9 [1;9H[?12l[?25h[?25l[3mO[23m[44;69H10[1;10H[?12l[?25h[?25l[3mR[23m[44;70H1[1;11H[?12l[?25h[?25l[3mI[23m[44;70H2[1;12H[?12l[?25h[?25l[3mO[23m[44;70H3[1;13H[?12l[?25h[?25l[3m [23m[44;70H4[1;14H[?12l[?25h[?25l[3mA[23m[44;70H5[1;15H[?12l[?25h[?25l[3mU[23m[44;70H6[1;16H[?12l[?25h[?25l[3mL[23m[44;70H7[1;17H[?12l[?25h[?25l[3mD[23m[44;70H8[1;18H[?12l[?25h[?25l[1;17H[K[44;70H7[1;17H[?12l[?25h[?25l[3mA[23m[44;70H8[1;18H[?12l[?25h[?25l[3m [23m[44;70H9[1;19H[?12l[?25h[?25l[3mD[23m[44;69H20[1;20H[?12l[?25h[?25l[3mE[23m[44;70H1[1;21H[?12l[?25h[?25l[3m [23m[44;70H2[1;22H[?12l[?25h[?25l[3mI[23m[44;70H3[1;23H[?12l[?25h[?25l[3mN[23m[44;70H4[1;24H[?12l[?25h[?25l[3mF[23m[44;70H5[1;25H[?12l[?25h[?25l[3mR[23m[44;70H6[1;26H[?12l[?25h[?25l[3mA[23m[44;70H7[1;27H[?12l[?25h[?25l[3m [23m[44;70H8[1;28H[?12l[?25h[?25l[3mA[23m[44;70H9[1;29H[?12l[?25h[?25l[3mG[23m[44;69H30[1;30H[?12l[?25h[?25l[3mI[23m[44;70H1[1;31H[?12l[?25h[?25l[3mL[23m[44;70H2[1;32H[?12l[?25h[?25l[3m*[23m[44;70H3[1;33H[?12l[?25h[?25l[44;70H4[1;34H[?12l[?25h[?25l[44;70H3[1;33H[?12l[?25h[?25l[2;1H[K[44;67H2,1 [2;1H[?12l[?25h[?25l[3;1H[K[44;67H3[3;1H[?12l[?25h[?25l-[44;69H2[3;2H[?12l[?25h[?25l[44;69H3[3;3H[?12l[?25h[?25l[33m-[m o[44;69H4[3;4H[?12l[?25h[?25lb[44;69H5[3;5H[?12l[?25h[?25lt[44;69H6[3;6H[?12l[?25h[?25le[44;69H7[3;7H[?12l[?25h[?25ln[44;69H8[3;8H[?12l[?25h[?25ld[44;69H9[3;9H[?12l[?25h[?25lo[44;69H10[3;10H[?12l[?25h[?25l[44;70H1[3;11H[?12l[?25h[?25la[44;70H2[3;12H[?12l[?25h[?25l[44;70H3[3;13H[?12l[?25h[?25lf[44;70H4[3;14H[?12l[?25h[?25lo[44;70H5[3;15H[?12l[?25h[?25lr[44;70H6[3;16H[?12l[?25h[?25lc[44;70H7[3;17H[?12l[?25h[?25la[44;70H8[3;18H[?12l[?25h[?25l[44;70H9[3;19H[?12l[?25h[?25ld[44;69H20[3;20H[?12l[?25h[?25lo[44;70H1[3;21H[?12l[?25h[?25l[44;70H2[3;22H[?12l[?25h[?25l[44;70H1[3;21H[?12l[?25h[?25l[3;20H[K[44;70H0[3;20H[?12l[?25h[?25l[3;19H[K[44;69H19[3;19H[?12l[?25h[?25l[44;70H8[3;18H[?12l[?25h[?25l[3;17H[K[44;70H7[3;17H[?12l[?25h[?25l[3;16H[K[44;70H6[3;16H[?12l[?25h[?25l[3;15H[K[44;70H5[3;15H[?12l[?25h[?25l[3;14H[K[44;70H4[3;14H[?12l[?25h[?25l[3;13H[K[44;70H3[3;13H[?12l[?25h[?25lF[44;70H4[3;14H[?12l[?25h[?25lO[44;70H5[3;15H[?12l[?25h[?25lR[44;70H6[3;16H[?12l[?25h[?25lç[44;70H8-17[3;17H[?12l[?25h[?25lA[44;70H9-18[3;18H[?12l[?25h[?25l[3;17H[K[44;70H8-17[3;17H[?12l[?25h[?25l[3;16H[K[44;70H6   [3;16H[?12l[?25h[?25lÇ[44;70H8-17[3;17H[?12l[?25h[?25lA[44;70H9-18[3;18H[?12l[?25h[?25l[44;69H20-19[3;19H[?12l[?25h[?25ld[44;70H1-20[3;20H[?12l[?25h[?25lo[44;70H2-21[3;21H[?12l[?25h[?25l[44;70H3-22[3;22H[?12l[?25h[?25lg[44;70H4-23[3;23H[?12l[?25h[?25li[44;70H5-24[3;24H[?12l[?25h[?25lt[44;70H6-25[3;25H[?12l[?25h[?25l![44;70H7-26[3;26H[?12l[?25h[?25l![44;70H8-27[3;27H[?12l[?25h[?25l![44;70H9-28[3;28H[?12l[?25h[?25l[4;1H[K[44;67H4,1    [4;1H[?12l[?25h[?25l[44;69H2[4;2H[?12l[?25h[?25l-[44;69H3[4;3H[?12l[?25h[?25l[44;69H4[4;4H[?12l[?25h[?25l[33m -[m b[44;69H5[4;5H[?12l[?25h[?25lo[44;69H6[4;6H[?12l[?25h[?25lm[44;69H7[4;7H[?12l[?25h[?25l[44;69H8[4;8H[?12l[?25h[?25l[44;69H7[4;7H[?12l[?25h[?25l[4;6H[K[44;69H6[4;6H[?12l[?25h[?25l[4;5H[K[44;69H5[4;5H[?12l[?25h[?25l -[4;4H[K[44;69H4[4;4H[?12l[?25h[?25l[44;69H3[4;3H[?12l[?25h[?25l[4;2H[K[44;69H2[4;2H[?12l[?25h[?25l[44;69H1[4;1H[?12l[?25h[?25l-[44;69H2[4;2H[?12l[?25h[?25l[44;69H3[4;3H[?12l[?25h[?25l[33m-[m B[44;69H4[4;4H[?12l[?25h[?25lo[44;69H5[4;5H[?12l[?25h[?25lm[44;69H6[4;6H[?12l[?25h[?25l,[44;69H7[4;7H[?12l[?25h[?25l[44;69H8[4;8H[?12l[?25h[?25lo[44;69H9[4;9H[?12l[?25h[?25l[44;69H10[4;10H[?12l[?25h[?25lg[44;70H1[4;11H[?12l[?25h[?25li[44;70H2[4;12H[?12l[?25h[?25lt[44;70H3[4;13H[?12l[?25h[?25l[44;70H4[4;14H[?12l[?25h[?25lé[44;70H6-15[4;15H[?12l[?25h[?25l[44;70H7-16[4;16H[?12l[?25h[?25l-[44;70H8-17[4;17H[?12l[?25h[?25l[44;70H9-18[4;18H[?12l[?25h[?25lY[44;69H20-19[4;19H[?12l[?25h[?25lo[44;70H1-20[4;20H[?12l[?25h[?25ld[44;70H2-21[4;21H[?12l[?25h[?25la[44;70H3-22[4;22H[?12l[?25h[?25l[44;70H2-21[4;21H[?12l[?25h[?25l[44;70H1-20[4;20H[?12l[?25h[?25l[44;70H0-19[4;19H[?12l[?25h[?25l[44;69H19-18[4;18H[?12l[?25h[?25l[44;70H8-17[4;17H[?12l[?25h[?25l[44;70H7-16[4;16H[?12l[?25h[?25l[44;70H6-15[4;15H[?12l[?25h[?25l[44;70H4   [4;14H[?12l[?25h[?25l[44;70H3[4;13H[?12l[?25h[?25l[44;70H2[4;12H[?12l[?25h[?25l[44;70H1[4;11H[?12l[?25h[?25l[44;70H0[4;10H[?12l[?25h[?25l[44;69H9 [4;9H[?12l[?25h[?25l[44;69H8[4;8H[?12l[?25h[?25l[44;69H7[4;7H[?12l[?25h[?25l[44;69H6[4;6H[?12l[?25h[?25l[44;69H5[4;5H[?12l[?25h[?25l[44;69H4[4;4H[?12l[?25h[?25l[44;69H3[4;3H[?12l[?25h[?25l[44;69H2[4;2H[?12l[?25h[?25l[44;69H1[4;1H[?12l[?25h[?25l[33m -[m Bom, o git é - Yoda[44;69H2[4;2H[?12l[?25h[?25l[33m -[m Bom, o git é - Yoda[44;69H3[4;3H[?12l[?25h[?25l[44;69H4[4;4H[?12l[?25h[?25l[44;69H5[4;5H[?12l[?25h[?25l[44;69H6[4;6H[?12l[?25h[?25l[44;69H7[4;7H[?12l[?25h[?25l[44;69H8[4;8H[?12l[?25h[?25l[44;69H9[4;9H[?12l[?25h[?25l[44;69H10[4;10H[?12l[?25h[?25l[44;70H1[4;11H[?12l[?25h[?25l[44;70H2[4;12H[?12l[?25h[?25l[44;70H3[4;13H[?12l[?25h[?25l[44;70H4[4;14H[?12l[?25h[?25l[44;70H5[4;15H[?12l[?25h[?25l[44;70H6[4;16H[?12l[?25h[?25l[44;70H8-17[4;17H[?12l[?25h[?25l[44;70H9-18[4;18H[?12l[?25h[?25l[44;69H20-19[4;19H[?12l[?25h[?25l[44;70H1-20[4;20H[?12l[?25h[?25l[44;70H2-21[4;21H[?12l[?25h[?25l[44;70H3-22[4;22H[?12l[?25h[?25l[44;70H4-23[4;23H[?12l[?25h[?25l[44;70H5-24[4;24H[?12l[?25h[?25l[5;1H[K[44;67H5,1    [5;1H[?12l[?25h[?25l[6;1H[K[44;67H6[6;1H[?12l[?25h[?25l[[44;69H2[6;2H[?12l[?25h[?25l][46m[][m[44;69H3[6;3H[?12l[?25h[?25l[44;69H2[6;2H[?12l[?25h[?25l[44;69H1[6;1H[?12l[?25h[?25l[44;69H2[6;2H[?12l[?25h[?25l[46mM[m]M[46m][m[44;69H3[6;3H[?12l[?25h[?25l[46mE[m]E[46m][m[44;69H4[6;4H[?12l[?25h[?25l[46mS[m]S[46m][m[44;69H5[6;5H[?12l[?25h[?25l[46mT[m]T[46m][m[44;69H6[6;6H[?12l[?25h[?25l[46mR[m]R[46m][m[44;69H7[6;7H[?12l[?25h[?25l[46mE[m]E[46m][m[44;69H8[6;8H[?12l[?25h[?25l[46m [m] [46m][m[44;69H9[6;9H[?12l[?25h[?25l[46m [m] [46m][m[44;69H10[6;10H[?12l[?25h[?25l][46m ][m[6;10H[K[44;69H9 [6;9H[?12l[?25h[?25l[46mW[m]W[46m][m[44;69H10[6;10H[?12l[?25h[?25l[46mI[m]I[46m][m[44;70H1[6;11H[?12l[?25h[?25l[46mN[m]N[46m][m[44;70H2[6;12H[?12l[?25h[?25l[46mD[m]D[46m][m[44;70H3[6;13H[?12l[?25h[?25l[46mU[m]U[46m][m[44;70H4[6;14H[?12l[?25h[?25l[46m [m] [46m][m[44;70H5[6;15H[?12l[?25h[?25l[46mE[m]E[46m][m[44;70H6[6;16H[?12l[?25h[?25l[46mS[m]S[46m][m[44;70H7[6;17H[?12l[?25h[?25l[46mT[m]T[46m][m[44;70H8[6;18H[?12l[?25h[?25l[46mA[m]A[46m][m[44;70H9[6;19H[?12l[?25h[?25l[46m [m] [46m][m[44;69H20[6;20H[?12l[?25h[?25l[46mV[m]V[46m][m[44;70H1[6;21H[?12l[?25h[?25l[46mE[m]E[46m][m[44;70H2[6;22H[?12l[?25h[?25l[46mN[m]N[46m][m[44;70H3[6;23H[?12l[?25h[?25l[46mD[m]D[46m][m[44;70H4[6;24H[?12l[?25h[?25l[46mO[m]O[46m][m[44;70H5[6;25H[?12l[?25h[?25l[46m [m] [46m][m[44;70H6[6;26H[?12l[?25h[?25l[46mI[m]I[46m][m[44;70H7[6;27H[?12l[?25h[?25l[46mS[m]S[46m][m[44;70H8[6;28H[?12l[?25h[?25l[46mS[m]S[46m][m[44;70H9[6;29H[?12l[?25h[?25l[46mO[m]O[46m][m[44;69H30[6;30H[?12l[?25h[?25l[44;70H1[6;31H[?12l[?25h[?25l[7;1H[K[6;1H[[28C][44;67H7,1 [7;1H[?12l[?25h[?25l[[44;69H2[7;2H[?12l[?25h[?25l][46m[][m[44;69H3[7;3H[?12l[?25h[?25l[][44;69H4[7;4H[?12l[?25h[?25lo[44;69H5[7;5H[?12l[?25h[?25lk[44;69H6[7;6H[?12l[?25h[?25l[7;5H[K[44;69H5[7;5H[?12l[?25h[?25l[7;4H[K[44;69H4[7;4H[?12l[?25h[?25lO[44;69H5[7;5H[?12l[?25h[?25lK[44;69H6[7;6H[?12l[?25h[44;1H[K[7;5H[?25l[44;67H7,5[11CAll[7;5H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"README.md" [New] 7L, 126C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim README.mdcat ~/.gitconfig git config --global user.name = "Adriano CS"[C[1P[1P
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name "Adriano CS"[1@=[1@=[1@ 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name == "Adriano CS"[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim README.md[Kcat ~/.gitconfig 
+[user]
+	name = =
+	name = =
+	name = ==
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat ~/.gitconfig [Kvim Padme.sh
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"Padme.sh" [New File][>c[2;1H[1m[34m~                                                                                   [3;1H~                                                                                   [4;1H~                                                                                   [5;1H~                                                                                   [6;1H~                                                                                   [7;1H~                                                                                   [8;1H~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H0,0-1[9CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H0,1[11CAll[1;1H[?12l[?25h[?25l[34m#[m[44;67H1,2[1;2H[?12l[?25h[?25l[34m![m[44;69H3[1;3H[?12l[?25h[?25l[34m/[m[44;69H4[1;4H[?12l[?25h[?25l[34mb[m[44;69H5[1;5H[?12l[?25h[?25l[34mi[m[44;69H6[1;6H[?12l[?25h[?25l[34mn[m[44;69H7[1;7H[?12l[?25h[?25l[34m/[m[44;69H8[1;8H[?12l[?25h[?25l[34mb[m[44;69H9[1;9H[?12l[?25h[?25l[34ma[m[44;69H10[1;10H[?12l[?25h[?25l[34ms[m[44;70H1[1;11H[?12l[?25h[?25l[34mh[m[44;70H2[1;12H[?12l[?25h[?25l[2;1H[K[44;67H2,1 [2;1H[?12l[?25h[?25lf[44;69H2[2;2H[?12l[?25h[?25lo[44;69H3[2;3H[?12l[?25h[?25l[33mfor[m[44;69H4[2;4H[?12l[?25h[?25l[44;69H5[2;5H[?12l[?25h[?25lI[44;69H6[2;6H[?12l[?25h[?25lP[44;69H7[2;7H[?12l[?25h[?25l[44;69H8[2;8H[?12l[?25h[?25li[44;69H9[2;9H[?12l[?25h[?25l[33min[m[44;69H10[2;10H[?12l[?25h[?25l[44;70H1[2;11H[?12l[?25h[?25l[31m1[m[44;70H2[2;12H[?12l[?25h[?25l[31m0[m[44;70H3[2;13H[?12l[?25h[?25l[44;70H4[2;14H[?12l[?25h[?25l[31m2[m[44;70H5[2;15H[?12l[?25h[?25l[31m0[m[44;70H6[2;16H[?12l[?25h[?25l[44;70H7[2;17H[?12l[?25h[?25l[31m3[m[44;70H8[2;18H[?12l[?25h[?25l[44;70H9[2;19H[?12l[?25h[?25l[31m0[m[44;69H20[2;20H[?12l[?25h[?25l[2;19H[K[44;69H19[2;19H[?12l[?25h[?25l[44;70H8[2;18H[?12l[?25h[?25l[31m0[m[44;70H9[2;19H[?12l[?25h[?25l[44;69H20[2;20H[?12l[?25h[?25l[31m4[m[44;70H1[2;21H[?12l[?25h[?25l[31m0[m[44;70H2[2;22H[?12l[?25h[?25l[44;70H3[2;23H[?12l[?25h[?25l[44;70H2[2;22H[?12l[?25h[?25l[3;1H[K[44;67H3,1 [3;1H[?12l[?25h[?25ld[44;69H2[3;2H[?12l[?25h[?25l[33mdo[m[44;69H3[3;3H[?12l[?25h[?25l[1m[37m[41m][m[44;69H4[3;4H[?12l[?25h[?25l[3;3H[K[44;69H3[3;3H[?12l[?25h[?25l[4;1H[K[44;67H4,1[4;1H[?12l[?25h[?25l[44;69H2-9[4;9H[?12l[?25h[?25lp[44;69H3-10[4;10H[?12l[?25h[?25li[44;69H4-11[4;11H[?12l[?25h[?25ln[44;69H5-12[4;12H[?12l[?25h[?25lg[44;69H6-13[4;13H[?12l[?25h[?25l[44;69H7-14[4;14H[?12l[?25h[?25l-[44;69H8-15[4;15H[?12l[?25h[?25l[33m-c[m[44;69H9-16[4;16H[?12l[?25h[?25l[44;69H10-17[4;17H[?12l[?25h[?25l[31m1[m[44;70H1-18[4;18H[?12l[?25h[?25l[31m0[m[44;70H2-19[4;19H[?12l[?25h[?25l[4;18H[K[44;70H1-18[4;18H[?12l[?25h[?25l[31m9[m[44;70H2-19[4;19H[?12l[?25h[?25l[31m2[m[44;70H3-20[4;20H[?12l[?25h[?25l.[44;70H4-21[4;21H[?12l[?25h[?25l[31m.1[m[44;70H5-22[4;22H[?12l[?25h[?25l[31m6[m[44;70H6-23[4;23H[?12l[?25h[?25l[31m8[m[44;70H7-24[4;24H[?12l[?25h[?25l.[44;70H8-25[4;25H[?12l[?25h[?25l[31m.9[m[44;70H9-26[4;26H[?12l[?25h[?25l[31m9[m[44;69H20-27[4;27H[?12l[?25h[?25l.[44;70H1-28[4;28H[?12l[?25h[?25l$[44;70H2-29[4;29H[?12l[?25h[?25l[35m$I[m[44;70H3-30[4;30H[?12l[?25h[?25l[35mP[m[44;70H4-31[4;31H[?12l[?25h[?25l[44;70H5-32[4;32H[?12l[?25h[?25l[33m>[m[44;70H6-33[4;33H[?12l[?25h[?25l[44;70H7-34[4;34H[?12l[?25h[?25l[44;70H6-33[4;33H[?12l[?25h[?25l[4;32H[K[44;70H5-32[4;32H[?12l[?25h[?25l[31m2[m[44;70H6-33[4;33H[?12l[?25h[?25l[33m>[m[44;70H7-34[4;34H[?12l[?25h[?25l[44;70H8-35[4;35H[?12l[?25h[?25l[44;70H7-34[4;34H[?12l[?25h[?25l[33m&[m[44;70H8-35[4;35H[?12l[?25h[?25l[4;34H[K[44;70H7-34[4;34H[?12l[?25h[?25l[4;33H[K[44;70H6-33[4;33H[?12l[?25h[?25l[4;32H[K[44;70H5-32[4;32H[?12l[?25h[?25l[31m2[m[44;70H6-33[4;33H[?12l[?25h[?25l[33m>[m[44;70H7-34[4;34H[?12l[?25h[?25l[33m&[m[44;70H8-35[4;35H[?12l[?25h[?25l[31m1[m[44;70H9-36[4;36H[?12l[?25h[?25l[44;69H30-37[4;37H[?12l[?25h[?25l/[44;70H1-38[4;38H[?12l[?25h[?25ld[44;70H2-39[4;39H[?12l[?25h[?25le[44;70H3-40[4;40H[?12l[?25h[?25lv[44;70H4-41[4;41H[?12l[?25h[?25l/[44;70H5-42[4;42H[?12l[?25h[?25ln[44;70H6-43[4;43H[?12l[?25h[?25lu[44;70H7-44[4;44H[?12l[?25h[?25ll[44;70H8-45[4;45H[?12l[?25h[?25ll[44;70H9-46[4;46H[?12l[?25h[?25l[5;1H[K[44;67H5,1    [5;1H[?12l[?25h[?25ld[44;69H2[5;2H[?12l[?25h[?25l[33mdo[m[44;69H3[5;3H[?12l[?25h[?25ldon[44;69H4[5;4H[?12l[?25h[?25l[33mdone[m[44;69H5[5;5H[?12l[?25h[?25l[44;67H4,1[4;1H[?12l[?25h[?25l[44;69H2-9[4;9H[?12l[?25h[?25l[44;69H3-10[4;10H[?12l[?25h[?25l[44;69H4-11[4;11H[?12l[?25h[?25l[44;69H5-12[4;12H[?12l[?25h[?25l[44;69H6-13[4;13H[?12l[?25h[?25l[44;69H7-14[4;14H[?12l[?25h[?25l[44;69H8-15[4;15H[?12l[?25h[?25l[44;69H9-16[4;16H[?12l[?25h[?25l[35m-c[m[31m2[m [31m192.168.99[m.[35m$IP[m [31m2[m[33m>&[m[31m1[m /dev/null[44;69H10-17[4;17H[?12l[?25h[?25l[44;70H1-18[4;18H[?12l[?25h[?25l[44;70H2-19[4;19H[?12l[?25h[?25l[44;70H3-20[4;20H[?12l[?25h[?25l[44;70H4-21[4;21H[?12l[?25h[?25l[44;70H5-22[4;22H[?12l[?25h[?25l[44;70H6-23[4;23H[?12l[?25h[?25l[44;70H7-24[4;24H[?12l[?25h[?25l[44;70H8-25[4;25H[?12l[?25h[?25l[44;70H9-26[4;26H[?12l[?25h[?25l[44;69H20-27[4;27H[?12l[?25h[?25l[44;70H1-28[4;28H[?12l[?25h[?25l[44;70H2-29[4;29H[?12l[?25h[?25l[44;70H3-30[4;30H[?12l[?25h[?25l[44;70H4-31[4;31H[?12l[?25h[?25l[44;70H5-32[4;32H[?12l[?25h[?25l[44;70H6-33[4;33H[?12l[?25h[?25l[44;70H7-34[4;34H[?12l[?25h[?25l[44;70H8-35[4;35H[?12l[?25h[?25l[44;70H9-36[4;36H[?12l[?25h[?25l[44;69H30-37[4;37H[?12l[?25h[?25l[44;70H1-38[4;38H[?12l[?25h[?25l[44;70H2-39[4;39H[?12l[?25h[?25l[44;70H3-40[4;40H[?12l[?25h[?25l[44;70H4-41[4;41H[?12l[?25h[?25l[44;70H5-42[4;42H[?12l[?25h[?25l[44;70H6-43[4;43H[?12l[?25h[?25l[44;70H7-44[4;44H[?12l[?25h[?25l[44;70H8-45[4;45H[?12l[?25h[?25l[44;70H9-46[4;46H[?12l[?25h[?25l[44;69H40-47[4;47H[?12l[?25h[?25l[44;70H1-48[4;48H[?12l[?25h[?25l[33m&[m[44;70H2-49[4;49H[?12l[?25h[?25l[33m&[m[44;70H3-50[4;50H[?12l[?25h[?25l[44;70H4-51[4;51H[?12l[?25h[?25le[44;70H5-52[4;52H[?12l[?25h[?25lc[44;70H6-53[4;53H[?12l[?25h[?25lh[44;70H7-54[4;54H[?12l[?25h[?25l[33mecho[m[44;70H8-55[4;55H[?12l[?25h[?25l[31m [m[44;70H9-56[4;56H[?12l[?25h[?25l[33m"[m
+[31mdone[m[44;69H50-57[4;57H[?12l[?25h[?25l[33m"
+done[m[44;70H1-58[4;58H[?12l[?25h[?25l[44;70H0-57[4;57H[?12l[?25h[?25l[31mO[m[33m"[m[44;70H1-58[4;58H[?12l[?25h[?25l[31mK[m[33m"[m[44;70H2-59[4;59H[?12l[?25h[?25l[31m [m[33m"[m[44;70H3-60[4;60H[?12l[?25h[?25l[31m1[m[33m"[m[44;70H4-61[4;61H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H5-62[4;62H[?12l[?25h[?25l[31m2[m[33m"[m[44;70H6-63[4;63H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H7-64[4;64H[?12l[?25h[?25l[31m1[m[33m"[m[44;70H8-65[4;65H[?12l[?25h[?25l[31m6[m[33m"[m[44;70H9-66[4;66H[?12l[?25h[?25l[31m7[m[33m"[m[44;69H60-67[4;67H[?12l[?25h[?25l[31m=[m[33m"[m[44;70H1-68[4;68H[?12l[?25h[?25l[33m"[m[4;68H[K[44;70H0-67[4;67H[?12l[?25h[?25l[33m"[m[4;67H[K[44;69H59-66[4;66H[?12l[?25h[?25l[31m8[m[33m"[m[44;69H60-67[4;67H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H1-68[4;68H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H2-69[4;69H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H3-70[4;70H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H4-71[4;71H[?12l[?25h[?25l[31m$[m[33m"[m[44;70H5-72[4;72H[?12l[?25h[?25l[35m$I[m[33m"[m[44;70H6-73[4;73H[?12l[?25h[?25l[35mP[m[33m"[m[44;70H7-74[4;74H[?12l[?25h[?25l[44;70H8-75[4;75H[?12l[?25h[?25l[31m [m[44;70H9-76[4;76H[?12l[?25h[?25l[33m|[m[44;69H70-77[4;77H[?12l[?25h[?25l[33m|[m[44;70H1-78[4;78H[?12l[?25h[?25l[44;70H2-79[4;79H[?12l[?25h[?25le[44;70H3-80[4;80H[?12l[?25h[?25lc[44;70H4-81[4;81H[?12l[?25h[?25lh[44;70H5-82[4;82H[?12l[?25h[?25l[33mecho[m[44;70H6-83[4;83H[?12l[?25h[?25l[31m [m[44;70H7-84[4;84H[?12l[?25h[?25l[33m"[m[5;1H[31mdone[m[44;70H8-85[5;1H[?12l[?25h[?25l[5;43r[5;1H[L[1;44r[5;1H[33m"
+done[m[44;67H[K[44;67H4,79-86[7CAll[5;2H[?12l[?25h[?25l[44;70H8-85[5;1H[?12l[?25h[?25l[31mF[m[33m"[m[44;70H9-86[5;2H[?12l[?25h[?25l[31mA[m[33m"[m[44;69H80-87[5;3H[?12l[?25h[?25l[31mI[m[33m"[m[44;70H1-88[5;4H[?12l[?25h[?25l[31mL[m[33m"[m[44;70H2-89[5;5H[?12l[?25h[?25l[31m [m[33m"[m[44;70H3-90[5;6H[?12l[?25h[?25l[31m-[m[33m"[m[44;70H4-91[5;7H[?12l[?25h[?25l[31m [m[33m"[m[44;70H5-92[5;8H[?12l[?25h[?25l[31m1[m[33m"[m[44;70H6-93[5;9H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H7-94[5;10H[?12l[?25h[?25l[31m2[m[33m"[m[44;70H8-95[5;11H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H9-96[5;12H[?12l[?25h[?25l[31m1[m[33m"[m[44;69H90-97[5;13H[?12l[?25h[?25l[31m6[m[33m"[m[44;70H1-98[5;14H[?12l[?25h[?25l[31m8[m[33m"[m[44;70H2-99[5;15H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H3-100[5;16H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H4-101[5;17H[?12l[?25h[?25l[31m9[m[33m"[m[44;70H5-102[5;18H[?12l[?25h[?25l[31m.[m[33m"[m[44;70H6-103[5;19H[?12l[?25h[?25l[31m$[m[33m"[m[44;70H7-104[5;20H[?12l[?25h[?25l[35m$I[m[33m"[m[44;70H8-105[5;21H[?12l[?25h[?25l[35mP[m[33m"[m[44;70H9-106[5;22H[?12l[?25h[?25l[44;67H5,5     [6;5H[?12l[?25h[?25l[44;67H4,99-106[5;22H[?12l[?25h[?25l[44;67H5,5     [6;5H[?12l[?25h[44;1H[K[6;4H[?25l[44;67H5,4[11CAll[6;4H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"Padme.sh" [New] 5L, 142C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim Padme.shcat ~/.gitconfig git config --global user.name == "Adriano CS"[1P[1P[1@-[1@-[1@a[1@d[1@d
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name --add "Adriano CS"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim Padme.sh[Kcat ~/.gitconfig 
+[user]
+	name = =
+	name = =
+	name = ==
+	name = --add
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat ~/.gitconfig git config --global user.name --add "Adriano CS"[1P[1P[1P[1P[1P[1P[C[1@-[1@-
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name --"Adriano CS"[1P[1P
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name "Adriano CS"[1@=[1@ 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.name = "Adriano CS"[2P[C[C[C[C[C[C[C[C[C[C[C[C[2@--[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pcat ~/.gitconfig 
+[user]
+	name = =
+	name = =
+	name = ==
+	name = --add
+	name = =
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat ~/.gitconfig git config --global user.name = "Adriano CS"[C[1P[1P[1P[1P[1@e[1@m[1@a[1@i[1@l[3Pname[C[C[C[C[C[C[C[C[C[C[C[C[C[3@email =[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git config --global user.email = "Adriano CS"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat ~/.gitconfig 
+[user]
+	name = =
+	name = =
+	name = ==
+	name = --add
+	name = =
+	email = =
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# gis[Kt status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mPadme.sh[m
+	[31mREADME.md[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add README.md 
+Padme.sh   README.md  
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add README.md 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add README.md [8Pstatus
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mPadme.sh[m
+
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git come[Kmit -m ""A"r"q"u"i"v"o" "p"a"r"a" "e"x"p"l"i"c"a"r" "o"R"e"p"o"[1P"[1P"[1P"[1P" "R"e"p"o"s"i"t"o"r"i"o"
+[master (root-commit) af31f30] Arquivo para explicar o Repositorio
+ 1 file changed, 7 insertions(+)
+ create mode 100644 README.md
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mPadme.sh[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git statuscommit -m "Arquivo para explicar o Repositorio"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd README.md [K[K[K[K[K[K[K[K[K[KPadme.sh 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Script para verificar a comunicao"
+[master ca16aaf] Script para verificar a comunicao
+ 1 file changed, 5 insertions(+)
+ create mode 100644 Padme.sh
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# ba
+badblocks  base32     base64     basename   bash       bashbug    batch
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# bah[Ks
+base32    base64    basename  bash      bashbug   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# bash Padme.sh 
+ping: unknown host /dev/null
+FAIL - 192.168.99.10
+ping: unknown host /dev/null
+FAIL - 192.168.99.20
+ping: unknown host /dev/null
+FAIL - 192.168.99.30
+ping: unknown host /dev/null
+FAIL - 192.168.99.40
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# bash Padme.sh git commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [K[7Pstatuscommit -m "Arquivo para explicar o Repositorio"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd README.md [8Pstatuscat ~/.gitconfig git config --global user.email = "Adriano CS"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat ~/.gitconfig git config --global user.name = "Adriano CS"[2P[C[C[C[C[C[C[C[C[C[C[C[C[2@--[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pcat ~/.gitconfig git config --global user.name --add "Adriano CS"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim Padme.sh[Kcat ~/.gitconfig [5Pvim Padme.sh
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"Padme.sh" 5L, 142C[>c[1;1H[34m#!/bin/bash[m
+[33mfor[m IP [33min[m [31m10[m [31m20[m [31m30[m [31m40[m
+[33mdo[m[4;9Hping [35m-c[m[31m2[m [31m192.168.99[m.[35m$IP[m [31m2[m[33m>&[m[31m1[m /dev/null [33m&&[m [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m||[m [33mecho[m[31m [m[33m""[m[5;1H[31mFAIL - 192.168.99.[m[35m$IP[m[33m"
+done[m
+[1m[34m~                                                                                   [8;1H~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;67H2[2;1H[?12l[?25h[?25l[44;67H3[3;1H[?12l[?25h[?25l[44;67H4,1-8[4;8H[?12l[?25h[?25l[44;69H2-9[4;9H[?12l[?25h[?25l[44;69H3-10[4;10H[?12l[?25h[?25l[44;69H4-11[4;11H[?12l[?25h[?25l[44;69H5-12[4;12H[?12l[?25h[?25l[44;69H6-13[4;13H[?12l[?25h[?25l[44;69H7-14[4;14H[?12l[?25h[?25l[44;69H8-15[4;15H[?12l[?25h[?25l[44;69H9-16[4;16H[?12l[?25h[?25l[44;69H10-17[4;17H[?12l[?25h[?25l[44;70H1-18[4;18H[?12l[?25h[?25l[44;70H2-19[4;19H[?12l[?25h[?25l[44;70H3-20[4;20H[?12l[?25h[?25l[44;70H4-21[4;21H[?12l[?25h[?25l[44;70H5-22[4;22H[?12l[?25h[?25l[44;70H6-23[4;23H[?12l[?25h[?25l[44;70H7-24[4;24H[?12l[?25h[?25l[44;70H8-25[4;25H[?12l[?25h[?25l[44;70H9-26[4;26H[?12l[?25h[?25l[44;69H20-27[4;27H[?12l[?25h[?25l[44;70H1-28[4;28H[?12l[?25h[?25l[44;70H2-29[4;29H[?12l[?25h[?25l[44;70H3-30[4;30H[?12l[?25h[?25l[44;70H4-31[4;31H[?12l[?25h[?25l[44;70H5-32[4;32H[?12l[?25h[?25l[44;70H6-33[4;33H[?12l[?25h[?25l[44;70H7-34[4;34H[?12l[?25h[?25l[44;70H6-33[4;33H[?12l[?25h[?25l[33m>&[m[31m1[m /dev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFF[5;1HAIL - 192.168.99.[m[35m$IP[m[33m"[m[5;22H[K[4;33H[?12l[?25h[?25l[33m&[m[31m1[m /dev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAA[5;1HIL - 192.168.99.[m[35m$IP[m[33m"[m[5;21H[K[4;33H[?12l[?25h[?25l[31m1[m /dev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAII[5;1HL - 192.168.99.[m[35m$IP[m[33m"[m[5;20H[K[4;33H[?12l[?25h[?25l /dev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAILL[5;1H - 192.168.99.[m[35m$IP[m[33m"[m[5;19H[K[4;33H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H4,26-33[7CAll[4;33H[?12l[?25h[?25l[33m>[m /dev/null [1C[33m&[m [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[1C[33m|[m [33mecho[m[31m [m[33m"[m[31mFAII[5;1HL - 192.168.99.[m[35m$IP[m[33m"[m[44;70H7-34[4;34H[?12l[?25h[?25l- /dev/null [1C[33m&[m [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[1C[33m|[m [33mecho[m[31m [m[33m"[m[31mFAA[5;1HIL - 192.168.99.[m[35m$IP[m[33m"[m[44;70H8-35[4;35H[?12l[?25h[44;1H[K[4;34H[?25l[44;67H4,27-34[7CAll[4;34H[?12l[?25h[?25l[44;70H8-35[4;35H[?12l[?25h[?25l[44;70H9-36[4;36H[?12l[?25h[?25l[44;69H30-37[4;37H[?12l[?25h[?25l[44;69H29-36[4;36H[?12l[?25h[?25ldev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAII[5;1HL - 192.168.99.[m[35m$IP[m[33m"[m[5;20H[K[4;36H[?12l[?25h[?25lev/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAILL[5;1H - 192.168.99.[m[35m$IP[m[33m"[m[5;19H[K[4;36H[?12l[?25h[?25lv/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL  [5;1H- 192.168.99.[m[35m$IP[m[33m"[m[5;18H[K[4;36H[?12l[?25h[?25l/null [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL --[5;1H 192.168.99.[m[35m$IP[m[33m"[m[5;17H[K[4;36H[?12l[?25h[?25lnull [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL -  [5;1H192.168.99.[m[35m$IP[m[33m"[m[5;16H[K[4;36H[?12l[?25h[?25lull [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL - 11[5;1H92.168.99.[m[35m$IP[m[33m"[m[5;15H[K[4;36H[?12l[?25h[?25lll [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL - 199[5;1H2.168.99.[m[35m$IP[m[33m"[m[5;14H[K[4;36H[?12l[?25h[?25ll [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL - 1922[5;1H.168.99.[m[35m$IP[m[33m"[m[5;13H[K[4;36H[?12l[?25h[?25l [33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL - 192..[5;1H168.99.[m[35m$IP[m[33m"[m[5;12H[K[4;36H[?12l[?25h[?25l[33m&[m[1C [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m|[m[1C [33mecho[m[31m [m[33m"[m[31mFAIL - 192.11[5;1H68.99.[m[35m$IP[m[33m"[m[5;11H[K[4;36H[?12l[?25h[?25l[44;70H8-35[4;35H[?12l[?25h[?25l[44;70H7-34[4;34H[?12l[?25h[?25l[44;70H6-33[4;33H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"Padme.sh" 5L, 130C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim Padme.shbash Padme.sh 
+OK 192.168.99.10
+OK 192.168.99.20
+OK 192.168.99.30
+FAIL - 192.168.99.40
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# ls][K
+-  Padme.sh  README.md
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# lsbash Padme.sh [2Pvim Padme.shbash Padme.sh git commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [K[7Pstatus
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   Padme.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m-[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git statusls[Kbash Padme.sh [2Pvim Padme.shbash Padme.sh git commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [K[7Pstatusadd Padme.sh 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add Padme.sh [7Pstatusls[Kbash Padme.sh [2Pvim Padme.shbash Padme.sh git commit -m "Script para verificar a comunicao"-" "[1P"[1P" "-" "C"o"r"r"e"c"a"o" "d" [A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co"" "S"c"r"i"p"t"
+[master 032701d] Script para verificar a comunicao - Correcao do Script
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Script para verificar a comunicao - Correcao do  Script"[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[Cadd Padme.sh [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pstatus
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m-[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git statuscommit -m "Script para verificar a comunicao - Correcao do  Script"[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[Cadd Padme.sh [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pstatusls[Kbash Padme.sh 
+OK 192.168.99.10
+OK 192.168.99.20
+OK 192.168.99.30
+FAIL - 192.168.99.40
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vo[Kim [K .git/in
+index  info/  
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim .git/info/exclude 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H".git/info/exclude" 6L, 240C[>c[1;1H[34m# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~[m
+[1m[34m~                                                                                   [8;1H~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;67H6[6;1H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H6,5[11CAll[6;5H[?12l[?25h[?25l[7;1H[K[44;67H7,1[7;1H[?12l[?25h[?25l-[44;69H2[7;2H[?12l[?25h[44;1H[K[7;1H[?25l[44;67H7,1[11CAll[7;1H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l".git/info/exclude" 7L, 242C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# givim .git/info/exclude [8Pbash Padme.sh[C[4Pgit statuscommit -m "Script para verificar a comunicao - Correcao do  Script"[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[Cadd Padme.sh [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pstatusls[Kbash Padme.sh [2Pvim Padme.shbash Padme.sh git commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [K[7Pstatuscommit -m "Arquivo para explicar o Repositorio"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd README.md [8Pstatuscat ~/.gitconfig git config --global user.email = "Adriano CS"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git dd [K[K[Kadd .
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add .config --globalvim .git/info/exclude [8Pbash Padme.sh[C[4Pgit status
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git status[1Padd .config --globalvim .git/info/exclude [8Pbash Padme.sh[C[4Pgit statuscommit -m "Script para verificar a comunicao - Correcao do  Script"[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[Cadd Padme.sh [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pstatusls[Kbash Padme.sh [2Pvim Padme.shbash Padme.sh git commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [Kcommit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash Padme.sh [Kgit commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd Padme.sh [K[7Pstatusadd Padme.sh commit -m "Script para verificar a comunicao"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash Padme.sh [K[2Pvim Padme.shbash Padme.sh ls[Kgit statusadd Padme.sh commit -m "Script para verificar a comunicao - Correcao do  Script"[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# ls
+-  Padme.sh  README.md
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log
+[?1h=[33mcommit 032701d07560347d3ca6f4f15106e76d2b1c9304[m[m
+Author: Adriano CS <adriano.csoares@gmail.com>[m
+Date:   Tue Dec 18 23:49:30 2018 +0000[m
+[m
+    Script para verificar a comunicao - Correcao do Script[m
+[m
+[33mcommit ca16aafcf795b23a60973f0c8c7829f8c2c103e1[m[m
+Author: Adriano CS <adriano.csoares@gmail.com>[m
+Date:   Tue Dec 18 23:44:38 2018 +0000[m
+[m
+    Script para verificar a comunicao[m
+[m
+[33mcommit af31f307781bdbdcd07699001bfb1fbf236f3532[m[m
+Author: Adriano CS <adriano.csoares@gmail.com>[m
+Date:   Tue Dec 18 23:43:11 2018 +0000[m
+[m
+    Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --gr
+--graph   --grep=   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --gr
+--graph   --grep=   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --graph 
+[?1h=* [33mcommit 032701d07560347d3ca6f4f15106e76d2b1c9304[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:49:30 2018 +0000[m
+[31m|[m [m
+[31m|[m     Script para verificar a comunicao - Correcao do Script[m
+[31m|[m  [m
+* [33mcommit ca16aafcf795b23a60973f0c8c7829f8c2c103e1[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:44:38 2018 +0000[m
+[31m|[m [m
+[31m|[m     Script para verificar a comunicao[m
+[31m|[m  [m
+* [33mcommit af31f307781bdbdcd07699001bfb1fbf236f3532[m[m
+  Author: Adriano CS <adriano.csoares@gmail.com>[m
+  Date:   Tue Dec 18 23:43:11 2018 +0000[m
+  [m
+      Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --graph [K[K[K[K[K[Koneline 
+[?1h=[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# vi RED[KADME.md 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"README.md" 7L, 126C[>c[1;1H[3m*REPOSITORIO AULA DE INFRA AGIL*[23m
+
+[33m-[m obtendo a FORÇA do git!!!
+[33m  -[m Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+[1m[34m~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;67H2,0-1[2;1H[?12l[?25h[?25l[44;67H3,1  [3;1H[?12l[?25h[?25l[44;67H4[4;1H[?12l[?25h[?25l[44;67H5,0-1[5;1H[?12l[?25h[?25l
+[46m[[28C][m[44;67H6,1  [6;1H[?12l[?25h[?25l[[28C]
+[46m[][m[44;67H7[7;1H[?12l[?25h[?25l[]
+[46m[][m OK[8;6H[K[44;67H8[8;1H[?12l[?25h[?25l[44;1H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"README.md" 8L, 132C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# git d[Kadd RED=[K[KADME.md 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Duplicacao de linha"
+[master e2e1cf6] Duplicacao de linha
+ 1 file changed, 1 insertion(+)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --oneline 
+[?1h=[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git re
+rebase         relink         repack         request-pull   revert 
+reflog         remote         replace        reset          
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git reflog [K[K[K[K[Kvert e2[K[Ke2e1cf6
+[?1049h[1;44r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[42;35H(B[0;7m[ Reading File ][3d(B[m[42;34H(B[0;7m[ Read 10 lines[13d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3        File: /root/kenobi/.git/COMMIT_EDITMSG                      [3;1H(B[mRevert "Duplicacao de linha"[5dThis reverts commit e2e1cf634f4bc73529105391bfd4bf54400c6fbf.[7d# Please enter the commit message for your changes. Lines starting[8d# with '#' will be ignored, and an empty message aborts the commit.[9d# On branch master[10d# Changes to be committed:[11d#[9Gmodified:   README.md[12d#[43d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[44d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[3d[42d[J[44;84H[44;1H[?1049l[?1l>[master b358ddc] Revert "Duplicacao de linha"
+ 1 file changed, 1 deletion(-)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat README.md 
+*REPOSITORIO AULA DE INFRA AGIL*
+
+- obtendo a FORÇA do git!!!
+  - Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat README.md git revert e2e1cf6log --oneline commit -m "Duplicacao de linha"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Padd README.md [5Pvi[C[C[C[C[C[C[C[C[C[C[C[5@git add[C[C[C[C[C[C[C[C[C[C[C[5Pvi[C[C[C[C[C[C[C[C[C[C[C[5@git log --oneline[C[5Pvi README.md[C[5@git add[C[C[C[C[C[C[C[C[C[C[Ccommit -m "Duplicacao de linha"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Padd README.md commit -m "Duplicacao de linha"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Plog --oneline revert e2e1cf6log --oneline 
+[?1h=[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git revert b358ddc
+[?1049h[1;44r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[42;35H(B[0;7m[ Reading File ][3d(B[m[42;34H(B[0;7m[ Read 10 lines[13d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3        File: /root/kenobi/.git/COMMIT_EDITMSG                      [3;1H(B[mRevert "Revert "Duplicacao de linha""[5dThis reverts commit b358ddcbe0163ff1be8018f8cd4c52365de76852.[7d# Please enter the commit message for your changes. Lines starting[8d# with '#' will be ignored, and an empty message aborts the commit.[9d# On branch master[10d# Changes to be committed:[11d#[9Gmodified:   README.md[12d#[43d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[44d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[3d[42d[J[44;84H[44;1H[?1049l[?1l>[master 1d19648] Revert "Revert "Duplicacao de linha""
+ 1 file changed, 1 insertion(+)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git revert b358ddclog --oneline 
+[?1h=[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Red=[K[K[KEADME.md 
+*REPOSITORIO AULA DE INFRA AGIL*
+
+- obtendo a FORÇA do git!!!
+  - Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+[] OK
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat README.md [4@git log --oneline[Crevert b358ddc[K[K[K[K[K[K[K1d19648
+[?1049h[1;44r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[42;35H(B[0;7m[ Reading File ][3d(B[m[42;34H(B[0;7m[ Read 10 lines[13d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3        File: /root/kenobi/.git/COMMIT_EDITMSG                      [3;1H(B[mRevert "Revert "Revert "Duplicacao de linha"""[5dThis reverts commit 1d196486334d2ae1b572912fc5e866f6487c974c.[7d# Please enter the commit message for your changes. Lines starting[8d# with '#' will be ignored, and an empty message aborts the commit.[9d# On branch master[10d# Changes to be committed:[11d#[9Gmodified:   README.md[12d#[43d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos[44d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line[3d[42d[J[44;84H[44;1H[?1049l[?1l>[master 786c24a] Revert "Revert "Revert "Duplicacao de linha"""
+ 1 file changed, 1 deletion(-)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git revert 1d19648[4Pcat README.md 
+*REPOSITORIO AULA DE INFRA AGIL*
+
+- obtendo a FORÇA do git!!!
+  - Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat README.md git revert 1d19648[4Pcat README.md [4@git log --oneline[C
+[?1h=[33m786c24a[m Revert "Revert "Revert "Duplicacao de linha"""[m
+[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git remote -v
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git remote -v[K[Kadd infraAgil https://github.com/Adrianocs/InfraAgi l.git
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git remote add infraAgil https://github.com/Adrianocs/InfraAgill.git[A]0;root@devops: ~/kenobiroot@devops:~/kenobi# [C[C[C[C[C[C[C[C[C[C[C-v[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+infraAgil	https://github.com/Adrianocs/InfraAgil.git (fetch)
+infraAgil	https://github.com/Adrianocs/InfraAgil.git (push)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git
+git                 git-shell           git-upload-pack     
+git-receive-pack    git-upload-archive  
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git pu
+pull   push   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git push infraAgil master
+Username for 'https://github.com': adriano.csoares@gmail.com
+Password for 'https://adriano.csoares@gmail.com@github.com': 
+Counting objects: 15, done.
+Delta compression using up to 2 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  66% (10/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15)   Writing objects:  93% (14/15)   Writing objects: 100% (15/15)   Writing objects: 100% (15/15), 1.64 KiB | 0 bytes/s, done.
+Total 15 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:  25% (1/4)   [Kremote: Resolving deltas:  50% (2/4)   [Kremote: Resolving deltas:  75% (3/4)   [Kremote: Resolving deltas: 100% (4/4)   [Kremote: Resolving deltas: 100% (4/4), done.[K
+To https://github.com/Adrianocs/InfraAgil.git
+ * [new branch]      master -> master
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git pull sta[K[K[KIn[K[KinfraAgil master 
+remote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)   [Kremote: Counting objects:  40% (2/5)   [Kremote: Counting objects:  60% (3/5)   [Kremote: Counting objects:  80% (4/5)   [Kremote: Counting objects: 100% (5/5)   [Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)   [Kremote: Compressing objects:  66% (2/3)   [Kremote: Compressing objects: 100% (3/3)   [Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/Adrianocs/InfraAgil
+ * branch            master     -> FETCH_HEAD
+   786c24a..714f1d4  master     -> infraAgil/master
+Updating 786c24a..714f1d4
+Fast-forward
+ Padme.sh | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# stat[K[K[K[Kgit status
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# bash Padme.sh 
+OK 192.168.99.10
+OK 192.168.99.20
+OK 192.168.99.30
+FAIL - 192.168.99.40
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Padme.sh 
+#!/bin/bash
+for IP in 10 20 30 40
+do
+	ping -c2 192.168.99.$IP >- && echo "OK 192.168.99.$IP" || echo "FAIL - 192.168.99.$IP"
+done
+#Comentario
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# i[Kgt[Kit log --onlli[K[K[Keline 
+[?1h=[33m714f1d4[m Update Padme.sh[m
+[33m786c24a[m Revert "Revert "Revert "Duplicacao de linha"""[m
+[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout -b dev
+Switched to a new branch 'dev'
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch 
+* [32mdev[m
+  master[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch [K[K[K[K[K[K[Kcheckout 
+dev                HEAD               master             
+FETCH_HEAD         infraAgil/master   ORIG_HEAD          
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout master [K[K[K[K[K[K[Kmaster 
+Switched to branch 'master'
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout master [9Pbranch[C
+  dev[m
+* [32mmaster[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch [9@checkout master[C[K[K[K[K[K[K[Kdev
+Switched to branch 'dev'
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout dev[5Pbranch 
+* [32mdev[m
+  master[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# ls
+-  Padme.sh  README.md
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vi Padme.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"Padme.sh" 6L, 142C[>c[1;1H[34m#!/bin/bash[m
+[33mfor[m IP [33min[m [31m10[m [31m20[m [31m30[m [31m40[m
+[33mdo[m[4;9Hping [35m-c[m[31m2[m [31m192.168.99[m.[35m$IP[m [33m>[m- [33m&&[m [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m||[m [33mecho[m[31m [m[33m"[m[31mFAIL - 192.11[5;1H68.99.[m[35m$IP[m[33m"
+done[m
+[34m#Comentario[m
+[1m[34m~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;67H2[2;1H[?12l[?25h[?25l[44;67H3[3;1H[?12l[?25h[?25l[44;67H4,1-8[4;8H[?12l[?25h[?25l[44;67H5,1  [6;1H[?12l[?25h[?25l[44;67H6[7;1H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H6,12[10CAll[7;12H[?12l[?25h[?25l[8;1H[K[44;67H7,1 [8;1H[?12l[?25h[?25lc[44;69H2[8;2H[?12l[?25h[?25lo[44;69H3[8;3H[?12l[?25h[?25lw[44;69H4[8;4H[?12l[?25h[?25ls[44;69H5[8;5H[?12l[?25h[?25la[44;69H6[8;6H[?12l[?25h[?25ly[44;69H7[8;7H[?12l[?25h[?25l[44;69H8[8;8H[?12l[?25h[?25l-[44;69H9[8;9H[?12l[?25h[?25l[35m-f[m[44;69H10[8;10H[?12l[?25h[?25l[44;70H1[8;11H[?12l[?25h[?25lt[44;70H2[8;12H[?12l[?25h[?25lu[44;70H3[8;13H[?12l[?25h[?25lx[44;70H4[8;14H[?12l[?25h[?25l[44;70H5[8;15H[?12l[?25h[?25l[33m"[m[44;70H6[8;16H[?12l[?25h[?25l[31mS[m[44;70H7[8;17H[?12l[?25h[?25l[31mc[m[44;70H8[8;18H[?12l[?25h[?25l[31mr[m[44;70H9[8;19H[?12l[?25h[?25l[31mi[m[44;69H20[8;20H[?12l[?25h[?25l[31mp[m[44;70H1[8;21H[?12l[?25h[?25l[31mt[m[44;70H2[8;22H[?12l[?25h[?25l[31m [m[44;70H3[8;23H[?12l[?25h[?25l[31mT[m[44;70H4[8;24H[?12l[?25h[?25l[31me[m[44;70H5[8;25H[?12l[?25h[?25l[31mr[m[44;70H6[8;26H[?12l[?25h[?25l[31mm[m[44;70H7[8;27H[?12l[?25h[?25l[31mi[m[44;70H8[8;28H[?12l[?25h[?25l[31mn[m[44;70H9[8;29H[?12l[?25h[?25l[31ma[m[44;69H30[8;30H[?12l[?25h[?25l[31md[m[44;70H1[8;31H[?12l[?25h[?25l[31mo[m[44;70H2[8;32H[?12l[?25h[?25l[33m"[m[44;70H3[8;33H[?12l[?25h[44;1H[K[8;32H[?25l[44;67H7,32[10CAll[8;32H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"Padme.sh" 7L, 175C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# git stats[Kus^C
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vi [Km README.md 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"README.md" 7L, 126C[>c[1;1H[3m*REPOSITORIO AULA DE INFRA AGIL*[23m
+
+[33m-[m obtendo a FORÇA do git!!!
+[33m  -[m Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+[1m[34m~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H1,33[10CAll[1;33H[?12l[?25h[?25l'[44;70H4[1;34H[?12l[?25h[44;1H[K[1;33H[?25l[44;67H1,33[10CAll[1;33H[?12l[?25h[?25l[1;33H[K[44;70H2[1;32H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;67H[K[44;67H1,32[10CAll[1;32H[?12l[?25h[?25l[3m *[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;70H3[1;33H[?12l[?25h[?25l[3m-*[23m[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;70H4[1;34H[?12l[?25h[?25l[3m *[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;70H5[1;35H[?12l[?25h[?25l[3mD*[23m[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;70H6[1;36H[?12l[?25h[?25l[3mE*[23m[44;70H7[1;37H[?12l[?25h[?25l[3mV*[23m[44;70H8[1;38H[?12l[?25h[?25l[3m *[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;70H9[1;39H[?12l[?25h[?25l[3mI*[23m[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;69H40[1;40H[?12l[?25h[?25l[3mN*[23m[44;70H1[1;41H[?12l[?25h[?25l[3m*[23m[1;41H[K[44;70H0[1;40H[?12l[?25h[?25l[3m*[23m[1;40H[K[3;2H[3m obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;69H39[1;39H[?12l[?25h[?25l[3m*[23m[1;39H[K[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;70H8[1;38H[?12l[?25h[?25l[3m*[23m[1;38H[K[44;70H7[1;37H[?12l[?25h[?25l[3m*[23m[1;37H[K[44;70H6[1;36H[?12l[?25h[?25l[3m*[23m[1;36H[K[3;2H[3m obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;70H5[1;35H[?12l[?25h[?25l[3mB*[23m[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;70H6[1;36H[?12l[?25h[?25l[3mR*[23m[44;70H7[1;37H[?12l[?25h[?25l[3mA*[23m[44;70H8[1;38H[?12l[?25h[?25l[3mN*[23m[44;70H9[1;39H[?12l[?25h[?25l[3mC*[23m[44;69H40[1;40H[?12l[?25h[?25l[3mH*[23m[44;70H1[1;41H[?12l[?25h[?25l[3m *[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[23m[44;70H2[1;42H[?12l[?25h[?25l[3mD*[23m[3;2H obtendo a FORÇA do git!!![4;4H Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK[44;70H3[1;43H[?12l[?25h[?25l[3mE*[23m[44;70H4[1;44H[?12l[?25h[?25l[3mV*[23m[44;70H5[1;45H[?12l[?25h[44;1H[K[1;44H[?25l[44;67H1,44[10CAll[1;44H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"README.md" 7L, 139C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim README.md [2P Padme.sh[Cls[Kvi Padme.sh [2@m README.md[C[Kgit status 
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   Padme.sh[m
+	[31mmodified:   README.md[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git .[K[K add .
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Alteração BRNC[K[KANCH DEV"
+[dev afe1dd9] Alteração BRANCH DEV
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Padme.sh [K[K[K[K[K[K[K[K[K[K[K[K[Kgit status
+On branch dev
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Padme.sh 
+#!/bin/bash
+for IP in 10 20 30 40
+do
+	ping -c2 192.168.99.$IP >- && echo "OK 192.168.99.$IP" || echo "FAIL - 192.168.99.$IP"
+done
+#Comentario
+cowsay -f tux "Script Terminado"
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout k[Kmaster 
+Switched to branch 'master'
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Padme.sh 
+#!/bin/bash
+for IP in 10 20 30 40
+do
+	ping -c2 192.168.99.$IP >- && echo "OK 192.168.99.$IP" || echo "FAIL - 192.168.99.$IP"
+done
+#Comentario
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --gr
+--graph   --grep=   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --graph 
+[?1h=* [33mcommit 714f1d414f7841727d2fa4f0e3a94d90f5e52a9c[m[m
+[31m|[m Author: Adrianocs <44871942+Adrianocs@users.noreply.github.com>[m
+[31m|[m Date:   Tue Dec 18 22:11:40 2018 -0200[m
+[31m|[m [m
+[31m|[m     Update Padme.sh[m
+[31m|[m  [m
+* [33mcommit 786c24a57eebb06a73358037fa0ca17e3f535eb9[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:59:58 2018 +0000[m
+[31m|[m [m
+[31m|[m     Revert "Revert "Revert "Duplicacao de linha"""[m
+[31m|[m     [m
+[31m|[m     This reverts commit 1d196486334d2ae1b572912fc5e866f6487c974c.[m
+[31m|[m  [m
+* [33mcommit 1d196486334d2ae1b572912fc5e866f6487c974c[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:59:31 2018 +0000[m
+[31m|[m [m
+[31m|[m     Revert "Revert "Duplicacao de linha""[m
+[31m|[m     [m
+[31m|[m     This reverts commit b358ddcbe0163ff1be8018f8cd4c52365de76852.[m
+[31m|[m  [m
+* [33mcommit b358ddcbe0163ff1be8018f8cd4c52365de76852[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:57:12 2018 +0000[m
+[31m|[m [m
+[31m|[m     Revert "Duplicacao de linha"[m
+[31m|[m     [m
+[31m|[m     This reverts commit e2e1cf634f4bc73529105391bfd4bf54400c6fbf.[m
+[31m|[m  [m
+* [33mcommit e2e1cf634f4bc73529105391bfd4bf54400c6fbf[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:56:20 2018 +0000[m
+[31m|[m [m
+[31m|[m     Duplicacao de linha[m
+[31m|[m  [m
+* [33mcommit 032701d07560347d3ca6f4f15106e76d2b1c9304[m[m
+[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+[31m|[m Date:   Tue Dec 18 23:49:30 2018 +0000[m
+[31m|[m [m
+[31m|[m     Script para verificar a comunicao - Correcao do Script[m
+[31m|[m  [m
+* [33mcommit ca16aafcf795b23a60973f0c8c7829f8c2c103e1[m[m
+:[K[K[31m|[m Author: Adriano CS <adriano.csoares@gmail.com>[m
+:[K[K[31m|[m Date:   Tue Dec 18 23:44:38 2018 +0000[m
+:[K[K[31m|[m [m
+:[K[K[31m|[m     Script para verificar a comunicao[m
+:[K[K[31m|[m  [m
+:[K[K* [33mcommit af31f307781bdbdcd07699001bfb1fbf236f3532[m[m
+:[K[K  Author: Adriano CS <adriano.csoares@gmail.com>[m
+:[K[K  Date:   Tue Dec 18 23:43:11 2018 +0000[m
+:[K[K  [m
+:[K[K      Arquivo para explicar o Repositorio[m
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git log --graph [Kgit push sta[K[K[KinfraAgil dev
+Username for 'https://github.com': adriano.csoares@gmail.com
+Password for 'https://adriano.csoares@gmail.com@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 414 bytes | 0 bytes/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+remote: 
+remote: Create a pull request for 'dev' on GitHub by visiting:[K
+remote:      https://github.com/Adrianocs/InfraAgil/pull/new/dev[K
+remote: 
+To https://github.com/Adrianocs/InfraAgil.git
+ * [new branch]      dev -> dev
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch 
+  dev[m
+* [32mmaster[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# vim Padme.sh 
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;44r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[44;1H"Padme.sh" 6L, 142C[>c[1;1H[34m#!/bin/bash[m
+[33mfor[m IP [33min[m [31m10[m [31m20[m [31m30[m [31m40[m
+[33mdo[m[4;9Hping [35m-c[m[31m2[m [31m192.168.99[m.[35m$IP[m [33m>[m- [33m&&[m [33mecho[m[31m [m[33m"[m[31mOK 192.168.99.[m[35m$IP[m[33m"[m[31m [m[33m||[m [33mecho[m[31m [m[33m"[m[31mFAIL - 192.11[5;1H68.99.[m[35m$IP[m[33m"
+done[m
+[34m#Comentario[m
+[1m[34m~                                                                                   [9;1H~                                                                                   [10;1H~                                                                                   [11;1H~                                                                                   [12;1H~                                                                                   [13;1H~                                                                                   [14;1H~                                                                                   [15;1H~                                                                                   [16;1H~                                                                                   [17;1H~                                                                                   [18;1H~                                                                                   [19;1H~                                                                                   [20;1H~                                                                                   [21;1H~                                                                                   [22;1H~                                                                                   [23;1H~                                                                                   [24;1H~                                                                                   [25;1H~                                                                                   [26;1H~                                                                                   [27;1H~                                                                                   [28;1H~                                                                                   [29;1H~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [38;1H~                                                                                   [39;1H~                                                                                   [40;1H~                                                                                   [41;1H~                                                                                   [42;1H~                                                                                   [43;1H~                                                                                   [m[44;67H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[44;67H6[7;1H[?12l[?25h[?25l[44;1H[1m-- INSERT --[m[44;13H[K[44;67H6,12[10CAll[7;12H[?12l[?25h[?25l[8;1H[K[44;67H7,1 [8;1H[?12l[?25h[44;1H[K[8;1H[?25l[44;67H7,0-1[9CAll[8;1H[?12l[?25h[?25l[44;67H[K[44;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"Padme.sh" 7L, 143C written
+[?1l>[?12l[?25h[?1049l]0;root@devops: ~/kenobiroot@devops:~/kenobi# gir ad[K[K[K[Kt add Padme.sh 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git comi[K[K
+commit   config   
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit Padme.sh [K[K[K[K[K[K[K[K[K-m "Espaco"
+[master 8ad4325] Espaco
+ 1 file changed, 1 insertion(+)
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# gii[Kt status
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git diff master dev
+[?1h=[1mdiff --git a/Padme.sh b/Padme.sh[m[m
+[1mindex 27a4604..9c30d60 100644[m[m
+[1m--- a/Padme.sh[m[m
+[1m+++ b/Padme.sh[m[m
+[36m@@ -4,4 +4,4 @@[m [mdo[m[m
+        ping -c2 192.168.99.$IP >- && echo "OK 192.168.99.$IP" || echo "FAIL - 192.1[m 68.99.$IP"[m[m
+ done[m[m
+ #Comentario[m[m
+[31m-[m[m
+[32m+[m[32mcowsay -f tux "Script Terminado"[m[m
+[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 68d048d..6e9d27c 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1,4 +1,4 @@[m[m
+[31m-*REPOSITORIO AULA DE INFRA AGIL*[m[m
+[32m+[m[32m*REPOSITORIO AULA DE INFRA AGIL - BRANCH DEV*[m[m
+ [m[m
+ - obtendo a FORÇA do git!!![m[m
+   - Bom, o git é - Yoda[m[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git diff master dev[9Pstatuscommit -m "Espaco"[5Padd Padme.sh [4Pvim[C[C[C[C[C[C[C[C[C[C[2Pgit branc[C[Cpush infraAgil dev[6Plog --graph [3Pcat Padme.s[C[C[7@git checkout master[C[7Pcat Padme.sh[C[3Pgit statuscommit -m "Alteração BRANCH DEV"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git merge master dev
+Auto-merging Padme.sh
+CONFLICT (content): Merge conflict in Padme.sh
+Automatic merge failed; fix conflicts and then commit the result.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# i[Kgit status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Changes to be committed:
+
+	[32mmodified:   README.md[m
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	[31mboth modified:   Padme.sh[m
+
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git add Padme.sh 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Teste"
+[master 6c6c957] Teste
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# 
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git commit -m "Teste"[4Padd Padme.sh [7Pstatusmerge master dev
+Already up-to-date.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git merge master devcommit -m "Teste"[4Padd Padme.sh [7Pstatus
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git o[K--ol[K[K[K[Kon[K[Klog on[K[K--oneline 
+[?1h=[33m6c6c957[m Teste[m
+[33m8ad4325[m Espaco[m
+[33mafe1dd9[m Alteração BRANCH DEV[m
+[33m714f1d4[m Update Padme.sh[m
+[33m786c24a[m Revert "Revert "Revert "Duplicacao de linha"""[m
+[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch 
+  dev[m
+* [32mmaster[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Padme.sh 
+#!/bin/bash
+for IP in 10 20 30 40
+do
+	ping -c2 192.168.99.$IP >- && echo "OK 192.168.99.$IP" || echo "FAIL - 192.168.99.$IP"
+done
+#Comentario
+<<<<<<< HEAD
+
+=======
+cowsay -f tux "Script Terminado"
+>>>>>>> dev
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# cat Re[KEADME.md 
+*REPOSITORIO AULA DE INFRA AGIL - BRANCH DEV*
+
+- obtendo a FORÇA do git!!!
+  - Bom, o git é - Yoda
+
+[MESTRE WINDU ESTA VENDO ISSO]
+[] OK
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git revert 6c6c957
+error: Commit 6c6c95705123d0fe3ffe8d7812765818ebe8ae12 is a merge but no -m option was given.
+fatal: revert failed
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git revert 6c6c957[4Pcat README.md [1PPadme.sh[C[2Pgit branc[C[C[2@cat Padme.s[C[C[2Pgit branc[C[C[2@cat Padme.s[C[C[1@README.md[Cgit revert 6c6c957[Kgit revert 6c6c957[4Pcat README.md [1PPadme.sh[C[2Pgit branc[C[C[7@log --oneline[C[8Pstatus
+On branch master
+nothing to commit, working directory clean
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git statusrevert 6c6c957[4Pcat README.md [1PPadme.sh[C[2Pgit branc[C[C
+  dev[m
+* [32mmaster[m
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch [1Pstatusrevert 6c6c957[4Pcat README.md [1PPadme.sh[C[2Pgit branc[C[C[7@log --oneline[C[8Pstatuslog --oneline 
+[?1h=[33m6c6c957[m Teste[m
+[33m8ad4325[m Espaco[m
+[33mafe1dd9[m Alteração BRANCH DEV[m
+[33m714f1d4[m Update Padme.sh[m
+[33m786c24a[m Revert "Revert "Revert "Duplicacao de linha"""[m
+[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch dev
+fatal: A branch named 'dev' already exists.
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git branch dev[K[K[K[K[K[K[K[K[K[Kcheckout dev
+Switched to branch 'dev'
+]0;root@devops: ~/kenobiroot@devops:~/kenobi# git checkout dev[2Pbranch[C[C[C[Clog --oneline [7Pbranch[C[7@log --oneline[C
+[?1h=[33mafe1dd9[m Alteração BRANCH DEV[m
+[33m714f1d4[m Update Padme.sh[m
+[33m786c24a[m Revert "Revert "Revert "Duplicacao de linha"""[m
+[33m1d19648[m Revert "Revert "Duplicacao de linha""[m
+[33mb358ddc[m Revert "Duplicacao de linha"[m
+[33me2e1cf6[m Duplicacao de linha[m
+[33m032701d[m Script para verificar a comunicao - Correcao do Script[m
+[33mca16aaf[m Script para verificar a comunicao[m
+[33maf31f30[m Arquivo para explicar o Repositorio[m
+[K[?1l>]0;root@devops: ~/kenobiroot@devops:~/kenobi# [K]0;root@devops: ~/kenobiroot@devops:~/kenobi# logout
+ _______________________________________
+/ Não tenha pressa, mas não perca tempo \
+\ --José Saramago                       /
+ ---------------------------------------
+        \   ^__^
+         \  (--)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+]0;vagrant@devops: ~vagrant@devops:~$ logout
+Connection to 127.0.0.1 closed.
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Ter 18 Dez 2018 22:33:28 -02

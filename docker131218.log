@@ -1,0 +1,56 @@
+Script iniciado em Qui 13 Dez 2018 21:32:22 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exitvagrant halt[8Pexit[Kvagrant ssh docker
+Welcome to Ubuntu 16.04.5 LTS (GNU/Linux 4.4.0-140-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+New release '18.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu Dec 13 23:34:02 2018 from 10.0.2.2
+]0;vagrant@docker: ~vagrant@docker:~$ sudo su -
+]0;root@docker: ~root@docker:~# puppet agent -t
+[0;32mInfo: Creating a new SSL key for docker.salas4linux.com.br[0m
+[1;31mError: Could not request certificate: Failed to open TCP connection to puppet:8140 (Connection refused - connect(2) for "puppet" port 8140)[0m
+Exiting; failed to retrieve certificate and waitforcert is disabled
+]0;root@docker: ~root@docker:~# echo "APONTAR O SERVER - POR ISSO DO ERRO"
+APONTAR O SERVER - POR ISSO DO ERRO
+]0;root@docker: ~root@docker:~# pp[Kuppet agent -t
+[1;31mError: Could not request certificate: Failed to open TCP connection to puppet:8140 (Connection refused - connect(2) for "puppet" port 8140)[0m
+Exiting; failed to retrieve certificate and waitforcert is disabled
+]0;root@docker: ~root@docker:~# echo "Nao esta comunicando com o PuppetServer"
+Nao esta comunicando com o PuppetServer
+]0;root@docker: ~root@docker:~# echo "Nao esta comunicando com o PuppetServer"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpuppet agent -t[K
+[1;31mError: Could not request certificate: Failed to open TCP connection to puppet:8140 (Connection refused - connect(2) for "puppet" port 8140)[0m
+Exiting; failed to retrieve certificate and waitforcert is disabled
+]0;root@docker: ~root@docker:~# puppet agent -t --server devops.salas4linux.com.br
+[0;32mInfo: Downloaded certificate for ca from devops.salas4linux.com.br[0m
+[0;32mInfo: csr_attributes file loading from /etc/puppetlabs/puppet/csr_attributes.yaml[0m
+[0;32mInfo: Creating a new SSL certificate request for docker.salas4linux.com.br[0m
+[0;32mInfo: Certificate Request fingerprint (SHA256): CF:29:BF:EB:1C:B0:19:DE:12:BC:E8:20:33:73:AA:29:64:91:EE:51:13:59:BF:75:C2:93:03:66:2D:63:67:40[0m
+Exiting; no certificate found and waitforcert is disabled
+]0;root@docker: ~root@docker:~# Echo[K[K[K[Kecho "Gerando a CHAVE [K"
+Gerando a CHAVE
+]0;root@docker: ~root@docker:~# [K]0;root@docker: ~root@docker:~# logout
+]0;vagrant@docker: ~vagrant@docker:~$ logout
+Connection to 127.0.0.1 closed.
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Qui 13 Dez 2018 22:04:27 -02
+Script iniciado em Qui 13 Dez 2018 22:04:37 -02
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ vagrant halt
+[1m==> automation: Attempting graceful shutdown of VM...[0m
+[1m==> docker: Attempting graceful shutdown of VM...[0m
+[1m==> devops: Attempting graceful shutdown of VM...[0m
+]0;noturno@ada15: ~/infra_noturnonoturno@ada15:~/infra_noturno$ exit
+
+Script concluído em Qui 13 Dez 2018 22:05:15 -02
